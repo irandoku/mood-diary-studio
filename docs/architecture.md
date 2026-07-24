@@ -39,6 +39,24 @@ A character plugin is declarative data:
 
 The framework reads the plugin as evidence and constraints. It never executes plugin content. A plugin must not contain scripts, dependencies, or instructions that override the framework's approval gates.
 
+## Storage binding
+
+Keep four layers distinct:
+
+```text
+Portable framework
+        |
+Logical character-pack schema
+        |
+Host storage binding
+        |
+Physical or host-managed storage
+```
+
+The framework defines how a pack is shaped. The binding states where this host can read or save it. Physical storage may be a local directory, a controlled workspace, managed project sources, current chat attachments, or a manual export controlled by the user.
+
+Bundled assets belong to the framework layer. They are public, read-only fixtures and must not become a substitute private pack.
+
 ## Evidence and canonicality
 
 Character onboarding tracks two independent dimensions:

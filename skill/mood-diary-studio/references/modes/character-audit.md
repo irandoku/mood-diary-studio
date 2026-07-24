@@ -8,6 +8,7 @@ Require:
 
 - the existing `character.md`;
 - new reference images, user-provided facts, or a proposed revision;
+- the storage binding that supplies the current card;
 - the exact target only if an approved update may follow.
 
 Treat the existing card as current policy, not unquestionable visual truth. Treat new references as evidence, not automatic replacement authority.
@@ -39,15 +40,16 @@ Absence from one view is not proof of removal.
 Return:
 
 1. audit scope and evidence quality;
-2. unchanged anchors;
-3. additions;
-4. contextual variants;
-5. conflicts and their impact;
-6. proposed patch;
-7. items deliberately left untouched;
-8. questions requiring user authority;
-9. `update_status: not-applied`.
+2. storage profile, locator, and write capability;
+3. unchanged anchors;
+4. additions;
+5. contextual variants;
+6. conflicts and their impact;
+7. proposed patch;
+8. items deliberately left untouched;
+9. questions requiring user authority;
+10. `update_status: not-applied`.
 
 Use `assets/templates/audit-result.md`.
 
-Apply a revision only after the user approves the patch and exact target. Re-read the saved file and report what changed. Never overwrite a different character or substitute another destination.
+Apply a revision only after the user approves the patch and exact writable target. Never update bundled samples as a substitute for a private card. Re-read the saved file and report what changed. Never overwrite a different character or substitute another destination.

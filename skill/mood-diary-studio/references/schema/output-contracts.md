@@ -11,6 +11,7 @@ Return complete Markdown using the selected mode's headings. Keep reasoning conc
 ## Emotional center
 ## Editorial selection
 ## Character use
+## Storage binding
 ## Composition
 ## Visual budget
 ## Text and date
@@ -26,6 +27,7 @@ Requirements:
 - report budget counts;
 - name the function of negative space;
 - identify the character-card version or reference-only status;
+- report the storage profile, locator, and availability state;
 - include one final prompt, not competing variants;
 - mark every drift check pass or revision.
 
@@ -42,6 +44,7 @@ Requirements:
 ## Canonical-role decisions
 ## Candidate character.md
 ## Review questions
+## Storage binding
 ## Proposed destination
 ## Install status
 ```
@@ -50,8 +53,9 @@ Requirements:
 
 - keep evidence status separate from canonical role;
 - include the complete candidate card;
-- use `install status: not-installed` before approval;
-- ask only questions that change identity or installation safety.
+- report the storage profile, persistence, and write capability;
+- use `not-installed`, `available-in-context`, or `export-ready` before a verified persistent write;
+- ask identity questions only; ask storage or write questions only when installation is requested in the current task.
 
 ## AUDIT
 
@@ -59,6 +63,7 @@ Requirements:
 # Character Audit
 
 ## Scope and evidence
+## Storage binding
 ## Unchanged
 ## New evidence
 ## Contextual variants
@@ -72,6 +77,7 @@ Requirements:
 Requirements:
 
 - distinguish missing evidence from contradiction;
+- report whether the supplied card can be updated in place;
 - explain the impact of each proposed change;
 - preserve an explicit untouched list;
 - use `update status: not-applied` before approval.
@@ -79,3 +85,5 @@ Requirements:
 ## Write-capable hosts
 
 Do not replace the review artifact with a file write. Deliver the review first. After explicit approval, write only the approved artifact and then report verification.
+
+Hosts without a verified writable persistent binding must return the complete artifact for host-managed saving or manual export.

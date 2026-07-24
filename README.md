@@ -58,6 +58,32 @@ paper-dot/
 
 The public repository includes one original, generic sample only. Keep personal character packs outside this repository. See [Private Character Packs](docs/private-character-packs.md).
 
+`assets/sample-character/` is a read-only public fixture. Never use it as the destination for a private or newly onboarded character.
+
+## Where private characters live
+
+The framework defines a character pack's structure but deliberately does not hardcode one universal directory. Each host supplies a storage binding:
+
+| Storage profile | Typical use | Persistence |
+|---|---|---|
+| `bundled-assets` | Public samples shipped with the Skill | Skill-scoped and read-only |
+| `local-filesystem` | Local agents with an approved pack path | Persistent local files |
+| `workspace-files` | A controlled agent workspace | Workspace scoped |
+| `managed-project` | A web project or managed knowledge area | Host managed |
+| `chat-attachments` | One conversation | Chat scoped |
+| `manual-export` | No writable storage | User saves the returned artifact |
+
+For a local agent, explicitly name the private pack:
+
+```text
+Use mood-diary-studio in ONBOARD mode. After review, install the approved
+character into /exact/user-selected/mood-diary-characters.
+```
+
+For a web host without local-directory access, attach the reference image and use ONBOARD normally. Keep the candidate as `not-installed` or `export-ready`, then save it in the host's project sources, file library, or an offline character pack. Uploading or attaching a card makes it available in context; it is not a filesystem installation.
+
+See [Private Character Packs](docs/private-character-packs.md) for complete local, workspace, and web-host workflows.
+
 ## Agent-neutral by design
 
 The installable skill uses the open Agent Skills layout and requires no scripts, package manager, network service, MCP server, image model, or vendor-specific runtime metadata.

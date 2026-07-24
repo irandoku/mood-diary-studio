@@ -58,6 +58,32 @@ paper-dot/
 
 公開 repo 只附一個原創、通用的示範角色。私人 character pack 應保存在 repo 外部，詳見 [私有角色包指南](docs/private-character-packs.md)。
 
+`assets/sample-character/` 是唯讀的公開測試 fixture，不得作為私人角色或新角色的安裝目的地。
+
+## 私人角色實際放在哪裡
+
+Framework 定義 character pack 的資料結構，但刻意不 hardcode 萬用目錄。每個 host 必須提供 storage binding：
+
+| Storage profile | 常見情境 | 持久性 |
+|---|---|---|
+| `bundled-assets` | 隨 Skill 發布的公開 sample | 隨 Skill 保存且唯讀 |
+| `local-filesystem` | 能存取已核准 pack 路徑的本機 Agent | 本機持久 |
+| `workspace-files` | 受控 Agent 工作區 | 工作區範圍 |
+| `managed-project` | 網頁 Project 或 host 管理的知識空間 | Host 管理 |
+| `chat-attachments` | 單次聊天 | 聊天範圍 |
+| `manual-export` | 沒有可寫入儲存空間 | 使用者另行保存 artifact |
+
+本機 Agent 必須明確指定私人 pack：
+
+```text
+使用 mood-diary-studio 的 ONBOARD 模式。Review 完成後，把核准角色安裝到：
+/使用者明確選定的/mood-diary-characters
+```
+
+沒有本機目錄存取能力的網頁 host，仍可附上定裝圖執行 ONBOARD；candidate 必須維持 `not-installed` 或 `export-ready`，再由使用者保存到 Project sources、檔案庫或離線 character pack。上傳或附加角色卡只代表它在目前上下文可用，不等於完成檔案系統安裝。
+
+本機、workspace 與網頁 host 的完整流程見 [私有角色包指南](docs/private-character-packs.md)。
+
 ## Agent 中立
 
 可安裝 Skill 採用開放 Agent Skills 目錄結構，不需要腳本、套件管理器、網路服務、MCP、特定生圖模型或平台 metadata。

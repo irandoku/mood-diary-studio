@@ -16,6 +16,15 @@
 - Flexible or contextual features used:
 - Identity limitations:
 
+## Storage binding
+
+```yaml
+profile:
+locator:
+persistence:
+availability_status:
+```
+
 ## Composition
 
 - Primary action or state:

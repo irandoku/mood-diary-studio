@@ -2,6 +2,17 @@
 
 ## Scope and evidence
 
+## Storage binding
+
+```yaml
+profile:
+locator:
+persistence:
+readable:
+writable:
+authority:
+```
+
 ## Unchanged
 
 ## New evidence

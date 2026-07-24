@@ -8,11 +8,14 @@ Validation separates structural conformance, behavioral quality, and host eviden
 2. Confirm the folder and frontmatter names match.
 3. Confirm every path named by `SKILL.md` exists.
 4. Confirm the installable Skill contains no executable files or vendor configuration.
-5. Confirm no absolute paths or private character identifiers appear in the portable core.
+5. Confirm no environment-specific hardcoded paths or private character identifiers appear in the portable core.
+6. Confirm bundled assets are never offered as private-character destinations.
 
 ## Behavioral checks
 
 Run every case in `tests/cases/` in a clean context. Evaluate against `tests/acceptance.md`.
+
+Include at least one writable local binding, one managed-project binding, and one missing-binding case. Verify that only the first can reach `installed`.
 
 Test the Skill as a user would:
 

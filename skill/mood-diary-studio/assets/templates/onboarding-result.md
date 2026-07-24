@@ -28,10 +28,25 @@
 
 ## Review questions
 
+## Storage binding
+
+```yaml
+profile:
+locator:
+persistence:
+readable:
+writable:
+authority:
+```
+
 ## Proposed destination
 
 - Not supplied.
 
 ## Install status
 
-Not installed.
+Select one: `not-installed`, `available-in-context`, or `export-ready`.
+
+For a newly drafted card that still needs host-managed or manual saving, use
+`export-ready`. Use `available-in-context` only when the character card itself
+is already readable from the current project or chat.

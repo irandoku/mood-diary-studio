@@ -12,6 +12,8 @@ Accept:
 - an optional date or short phrase;
 - optional output-language, aspect-ratio, or visual-density preferences.
 
+Resolve the character source through `references/schema/storage-profiles.md`. A bundled sample is read-only. A project source or chat attachment is available in context, not installed.
+
 If no approved card exists, allow a user-authorized reference-only character for this result, but label identity as ephemeral and do not claim cross-entry consistency. Do not silently create or install a card.
 
 ## Workflow
@@ -74,6 +76,8 @@ Use `references/editorial/text-and-date.md`. Do not invent missing dates, quotat
 Use immutable anchors as requirements. Use flexible or contextual features only when they support the entry. Ignore inferred or undecided items unless the user explicitly approves them for this result.
 
 Do not display every anchor like a product catalog. Preserve identity while keeping the diary action natural.
+
+Record the storage profile, locator, card version or candidate status, and availability state.
 
 ### 8. Write the prompt
 

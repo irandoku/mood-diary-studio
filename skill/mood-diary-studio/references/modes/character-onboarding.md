@@ -9,6 +9,7 @@ Obtain:
 - the proposed display name;
 - at least one user-authorized reference image or a user-provided visual inventory;
 - the intended type: mascot, humanoid, or unresolved;
+- a storage binding, or enough context to select `chat-attachments` or `manual-export`;
 - the exact candidate-pack target only if installation may follow.
 
 Do not require personality or worldbuilding to begin visual onboarding.
@@ -80,9 +81,16 @@ Return:
 4. unknown or obstructed areas;
 5. canonical-role decisions still required;
 6. the complete candidate `character.md`;
-7. a proposed destination, if supplied;
-8. `install_status: not-installed`.
+7. the storage profile, locator, persistence, and write capability;
+8. a proposed destination, if supplied;
+9. an accurate install status.
 
-Ask only questions whose answers would change canonical identity or safe installation.
+Ask only questions whose answers would change canonical identity. Ask for a locator, collision check, or write approval only when the user requests installation in the current task. Otherwise report the binding as missing, unverified, or read-only without turning future storage into a review question.
 
-Install only after the user explicitly approves the complete candidate and exact destination. If the target exists, switch to AUDIT instead of overwriting it.
+Use `not-installed` or `export-ready` before a persistent write. Use
+`export-ready` when a newly produced candidate still needs host-managed or
+manual saving. Use `available-in-context` only when the character card itself,
+not merely its reference image, is already readable from project or chat
+context.
+
+Install only after the user explicitly approves the complete candidate and exact writable destination. Never install into bundled Skill assets. If the target exists, switch to AUDIT instead of overwriting it.

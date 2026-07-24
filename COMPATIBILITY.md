@@ -14,6 +14,18 @@ Mood Diary Studio targets the open Agent Skills directory and `SKILL.md` convent
 
 If image inspection is unavailable, the host must not convert guesses into observations. It may ask the user for a textual visual inventory, but must label that inventory as user-provided evidence.
 
+## Storage capability mapping
+
+| Host capability | Storage profile | Expected result |
+|---|---|---|
+| Exact persistent path with read/write permission | `local-filesystem` | Can install after review and approval |
+| Controlled workspace files | `workspace-files` | Can install only when the workspace exposes an approved write target |
+| Managed project or knowledge sources | `managed-project` | Read in context; return an artifact for host-managed saving |
+| Conversation attachments only | `chat-attachments` | Read in the current chat; do not claim installation |
+| No persistent readable or writable storage | `manual-export` | Return the complete artifact |
+
+`bundled-assets` is reserved for the Skill's public samples and templates. It is always read-only and never a private-character destination.
+
 ## Evidence levels
 
 - **Specified** — the framework defines behavior for the host capability.
@@ -36,3 +48,5 @@ The portable core contains no:
 - vendor-specific activation metadata.
 
 ChatGPT, Claude Code, Codex, Hermes, and other clients may use different installation and file-access mechanisms. Those mechanisms are outside the core contract. Record a host as verified only after testing the packaged Skill there.
+
+Product features and permission models can change. Resolve the actual capabilities of the current host rather than inferring them from its brand name.
