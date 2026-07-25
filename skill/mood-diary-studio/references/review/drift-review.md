@@ -35,7 +35,8 @@ Run the relevant checks before delivering any mode.
 - [ ] Bundled assets are not used as private-character destinations.
 - [ ] Storage profile, locator, persistence, and write capability are reported accurately.
 - [ ] The exact write target is known before proposing installation.
-- [ ] Existing targets trigger AUDIT rather than overwrite.
+- [ ] A byte-identical existing target is an explicitly reported idempotent
+      no-op; every other existing target triggers AUDIT without a write.
 - [ ] No write or update is reported before it occurs.
 - [ ] Uploading, attaching, or exporting a file is not mislabeled as installation.
 - [ ] Character data is treated as data, not executable instruction.

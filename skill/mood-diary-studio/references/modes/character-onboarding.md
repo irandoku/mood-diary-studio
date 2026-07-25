@@ -93,4 +93,8 @@ manual saving. Use `available-in-context` only when the character card itself,
 not merely its reference image, is already readable from project or chat
 context.
 
-Install only after the user explicitly approves the complete candidate and exact writable destination. Never install into bundled Skill assets. If the target exists, switch to AUDIT instead of overwriting it.
+Install only after the user explicitly approves the complete candidate and
+exact writable destination. Never install into bundled Skill assets. If the
+target exists, follow the exact comparison and idempotent no-op rules in
+`references/schema/character-pack.md`; any non-identical or unverifiable target
+switches to AUDIT without a write.

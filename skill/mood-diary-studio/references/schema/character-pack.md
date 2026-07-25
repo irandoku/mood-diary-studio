@@ -46,9 +46,21 @@ Before installation:
 7. show the complete candidate and destination;
 8. obtain explicit approval.
 
-If the target exists, do not overwrite it. Switch to AUDIT and propose a patch.
+If the target exists, do not write to it. Compare the complete approved plugin
+file set with the exact target:
 
-After approved installation, re-read the saved card, verify the ID and status, and report the exact destination. Report `installed` only after this verification. Hosts without write capability return the complete plugin with `export-ready`.
+- when the file sets and every file are byte-identical, treat installation as
+  an idempotent no-op, re-read the existing card, and report `installed` while
+  stating explicitly that no write was performed;
+- when any file is missing, extra, different, or cannot be compared, switch to
+  AUDIT and propose a patch without changing the target.
+
+Never repair, merge, touch, or overwrite an existing target during installation.
+
+After an approved new installation, re-read the saved card, verify the ID and
+status, and report the exact destination. Report `installed` only after this
+verification. Hosts without write capability return the complete plugin with
+`export-ready`.
 
 ## Update behavior
 

@@ -48,7 +48,16 @@ Evaluate each case from a clean context with only the packaged Skill and case in
 - An existing character card supplied as a chat attachment is `available-in-context`; a new candidate drafted from an attached reference is `export-ready`.
 - `assets/sample-character/` remains a bundled read-only fixture.
 - `readable` and `writable` are booleans; capability is not confused with approval.
+- An accessible absolute path supplied explicitly by the user resolves to
+  `local-filesystem`, even when it is inside the current workspace.
+- `workspace-files` is used only for a host-supplied workspace-relative
+  binding; no absolute path is invented.
 - Only an exact approved writable persistent binding can reach `installed`.
+- A complete byte-identical existing target is an idempotent installation:
+  nothing is written, the card is re-read, and the result is `installed` with
+  the no-write outcome stated explicitly.
+- A different, incomplete, extra, or unverifiable existing target is not
+  changed and switches to AUDIT.
 
 ## Failure
 

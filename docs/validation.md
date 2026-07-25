@@ -15,7 +15,15 @@ Validation separates structural conformance, behavioral quality, and host eviden
 
 Run every case in `tests/cases/` in a clean context. Evaluate against `tests/acceptance.md`.
 
-Include at least one writable local binding, one managed-project binding, and one missing-binding case. Verify that only the first can reach `installed`.
+Include at least one writable local binding, one managed-project binding, and
+one missing-binding case. Verify that only the first can reach `installed`.
+Also verify that an explicitly supplied accessible absolute path remains
+`local-filesystem` even inside a workspace, while `workspace-files` requires a
+host-supplied workspace-relative binding.
+
+Exercise both existing-target branches. A complete byte-identical target must
+remain untouched, be re-read, and report an idempotent `installed` result. Any
+different or unverifiable target must remain untouched and switch to AUDIT.
 
 Test the Skill as a user would:
 

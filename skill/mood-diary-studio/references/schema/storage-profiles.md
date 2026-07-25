@@ -46,12 +46,14 @@ Use for public samples and templates shipped inside the Skill.
 
 ### local-filesystem
 
-Use when the host can read and write an exact user-approved directory.
+Use when the host exposes an exact absolute path that it can read or write.
 
 - Persistence: `persistent`.
 - Read: according to host permission.
 - Write: only after candidate or patch approval.
-- Locator: an exact path supplied by the user or authorized workspace context.
+- Locator: the exact absolute path supplied by the user or authorized context.
+- Rule: an explicitly supplied absolute path remains `local-filesystem` even
+  when it happens to be inside the current workspace.
 
 ### workspace-files
 
@@ -60,7 +62,8 @@ Use for a host-controlled workspace with file capabilities but no general filesy
 - Persistence: `workspace-scoped`.
 - Read and write: according to workspace permission.
 - Locator: the host's authorized workspace-relative location.
-- Rule: do not translate it into an invented local absolute path.
+- Rule: use this profile only when the host supplies a workspace-relative
+  binding; do not translate it into an invented local absolute path.
 
 ### managed-project
 
@@ -94,7 +97,9 @@ Use when no readable persistent pack binding exists or the host cannot write.
 
 ## Resolution order
 
-1. Use a binding explicitly supplied in the current request.
+1. Use a binding explicitly supplied in the current request. An accessible
+   absolute path resolves to `local-filesystem`; a host-supplied
+   workspace-relative binding resolves to `workspace-files`.
 2. Otherwise use a binding already established in the current authorized workspace or project context.
 3. Otherwise derive `chat-attachments` only when the current character files are attached.
 4. Otherwise use `manual-export`.
@@ -110,7 +115,9 @@ produced, not merely a reference image used to draft it:
 - `available-in-context` — an existing character card is readable in a project, workspace, or chat but is not installed into a character pack;
 - `not-installed` — candidate exists but no persistent install occurred;
 - `export-ready` — a complete new candidate or revision artifact is ready for host-managed or manual saving;
-- `installed` — the approved plugin was written to a persistent pack and re-read successfully;
+- `installed` — the approved plugin is present in a persistent pack and was
+  re-read successfully, either after an approved write or after verifying that
+  an existing target is byte-identical to the complete approved plugin;
 - `not-applied` — an audit patch was proposed but not written.
 
 For example, a managed-project reference image can be available in context while
@@ -118,4 +125,6 @@ a newly drafted candidate card remains `export-ready`. Use
 `available-in-context` only when the character card itself is already readable
 from that context.
 
-Never report `installed` based only on generating, uploading, attaching, or displaying a candidate card.
+Never report `installed` based only on generating, uploading, attaching, or
+displaying a candidate card. When installation is an idempotent no-op, state
+explicitly that no write was performed.
