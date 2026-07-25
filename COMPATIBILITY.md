@@ -41,12 +41,23 @@ Do not promote one evidence level into another.
 |---|---|---|
 | Codex Desktop on macOS | Host verified | Local Skill discovery; image-based ONBOARD; review-gated `local-filesystem` installation with relative reference resolution and post-write re-read; DIARY with an approved installed character card; model-neutral prompt delivery |
 | Codex Desktop on macOS | Behavior tested | Public-safe AUDIT and existing-target acceptance cases, including absolute-path binding and byte-identical idempotent installation |
-| ChatGPT web | Specified only | Not yet behavior tested or host verified |
+| ChatGPT Work on web | Host verified | Uploaded Skill package discovery; image-based ONBOARD; review-gated `manual-export` with an approved character card and byte-identical reference image; validated ZIP download; cross-chat character-package import; DIARY brief and model-neutral prompt delivery |
 | Hermes | Specified only | Not yet behavior tested or host verified |
 
-The Codex Desktop verification was completed on 2026-07-26. Image rendering was
-requested separately through the host after DIARY delivered its prompt; rendering
-is not a capability of this Skill.
+The Codex Desktop and ChatGPT Work verifications were completed on 2026-07-26.
+Image rendering was requested separately through each host after DIARY delivered
+its prompt; rendering is not a capability of this Skill. In both hosts, the
+approved character anchors remained recognizable in the rendered result without
+turning contextual work clothing into a permanent identity requirement.
+
+On ChatGPT web, installed Skills were available in Work but not in ordinary
+Chat during verification. Work exposed a writable cloud VM filesystem for
+temporary assembly and validation, but a fresh Work chat used a different host
+and could not read files created in the prior VM. It also could not read a file
+from the user's macOS `/tmp` at the same path. These runtime paths are not
+verified persistent character-pack bindings: the tested web workflow correctly
+reported `manual-export` and `not installed`, then reloaded the downloaded
+package as a chat attachment in a fresh Work chat.
 
 ## Runtime neutrality
 
