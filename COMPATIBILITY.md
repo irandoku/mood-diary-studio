@@ -35,6 +35,19 @@ If image inspection is unavailable, the host must not convert guesses into obser
 
 Do not promote one evidence level into another.
 
+## Current host evidence
+
+| Host | Evidence level | Verified scope |
+|---|---|---|
+| Codex Desktop on macOS | Host verified | Local Skill discovery; image-based ONBOARD; review-gated `local-filesystem` installation with relative reference resolution and post-write re-read; DIARY with an approved installed character card; model-neutral prompt delivery |
+| Codex Desktop on macOS | Behavior tested | Public-safe AUDIT and existing-target acceptance cases, including absolute-path binding and byte-identical idempotent installation |
+| ChatGPT web | Specified only | Not yet behavior tested or host verified |
+| Hermes | Specified only | Not yet behavior tested or host verified |
+
+The Codex Desktop verification was completed on 2026-07-26. Image rendering was
+requested separately through the host after DIARY delivered its prompt; rendering
+is not a capability of this Skill.
+
 ## Runtime neutrality
 
 The portable core contains no:
