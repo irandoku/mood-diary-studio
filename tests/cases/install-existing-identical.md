@@ -11,4 +11,5 @@ byte-for-byte identical to the approved bundled sample plugin.
 
 Handle the request according to the existing-target rules. Do not rewrite,
 touch, or otherwise change any target file. Re-read the target card and report
-the installation outcome accurately.
+`availability_state: in-context`,
+`persistence_state: pack-installed`, and the no-write outcome accurately.

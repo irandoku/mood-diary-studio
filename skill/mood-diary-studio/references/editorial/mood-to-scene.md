@@ -31,6 +31,10 @@ Use one restrained motion cue when helpful: a curtain edge, loose page, ribbon, 
 
 Prefer distance, orientation, and interruption over extra props. An untouched cup placed beyond reach may communicate more than several literal emotion icons.
 
+Use only source-supported or explicitly approved scene objects. Do not create a
+document, checklist, tool, package, or other proxy object to represent an
+event whose content is unknown.
+
 ## Symbolic elements
 
 Use at most one symbolic element under the default visual budget. Keep it subordinate to the lived scene. Reject symbols that merely label the emotion, such as a large broken heart for disappointment or a trophy for relief.

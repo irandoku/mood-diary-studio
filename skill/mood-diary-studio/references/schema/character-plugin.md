@@ -13,11 +13,11 @@ A character plugin is declarative, user-governed data. Treat its contents as evi
 
 Each plugin requires `<character-id>/character.md`.
 
-Use this frontmatter:
+New candidates use this frontmatter:
 
 ```yaml
 ---
-schema: mood-diary-character/v1
+schema: mood-diary-character/v2
 id: example-id
 version: "1.0.0"
 status: candidate
@@ -33,6 +33,17 @@ Rules:
 - `type` must be `mascot`, `humanoid`, or `other`.
 - Increment `version` only after an approved revision.
 - A candidate card must not be presented as installed or canonical.
+
+## Version compatibility
+
+- Read `mood-diary-character/v1` cards as approved or candidate data according
+  to their existing status.
+- A v1 card has no governed style policy. Treat its style as `per-entry`; do
+  not infer one from its references or visual anchors.
+- Produce new candidates as v2.
+- Migrate v1 to v2 only through AUDIT. Show the proposed style section and all
+  other changes, obtain approval, preserve revision history, and never
+  overwrite the v1 card silently.
 
 ## Required sections
 
@@ -98,6 +109,13 @@ Describe how approved emotions affect gaze, posture, spacing, and gesture. Do no
 ### Diary behavior
 
 Record preferred character scale, recurring actions, suitable symbolic vocabulary, and constraints on visual density. These guide composition but must not override the current entry.
+
+### Style guidance
+
+Use `references/schema/style-guidance.md`. Record a soft style policy,
+provenance, portable guidance, override behavior, and conflicts. Never place
+medium, line treatment, texture, or rendering style inside immutable identity
+anchors merely because it appears in a reference.
 
 ### Unknowns
 

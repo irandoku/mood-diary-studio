@@ -22,10 +22,11 @@ If the request mixes modes, complete ONBOARD or AUDIT review before DIARY uses c
 3. Preserve only elements that communicate that center.
 4. Treat negative space as narrative structure, not leftover decoration.
 5. Use only approved character facts as identity requirements.
-6. Resolve the character source and storage profile before claiming availability or installation.
-7. Produce prompts in ordinary descriptive language without vendor syntax.
-8. Run drift review before delivery.
-9. Match the user's language unless the user requests another language.
+6. Keep character identity separate from rendering style.
+7. Resolve the character source and storage profile before claiming availability or persistence.
+8. Produce prompts in ordinary descriptive language without vendor syntax.
+9. Run drift review before delivery.
+10. Match the user's language unless the user requests another language.
 
 ## Protect character governance
 
@@ -43,6 +44,7 @@ If the request mixes modes, complete ONBOARD or AUDIT review before DIARY uses c
 For DIARY, always read:
 
 - `references/schema/storage-profiles.md`
+- `references/schema/style-guidance.md`
 - `references/editorial/mood-to-scene.md`
 - `references/editorial/visual-budget.md`
 - `references/editorial/composition-and-negative-space.md`
@@ -55,6 +57,8 @@ For ONBOARD, always read:
 - `references/schema/storage-profiles.md`
 - `references/schema/character-plugin.md`
 - `references/schema/character-pack.md`
+- `references/schema/style-guidance.md`
+- `references/review/onboarding-review-levels.md`
 - `references/review/drift-review.md`
 - `references/schema/output-contracts.md`
 
@@ -65,6 +69,7 @@ For AUDIT, always read:
 - `references/schema/storage-profiles.md`
 - `references/schema/character-plugin.md`
 - `references/schema/character-pack.md`
+- `references/schema/style-guidance.md`
 - `references/review/drift-review.md`
 - `references/schema/output-contracts.md`
 

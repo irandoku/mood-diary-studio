@@ -23,6 +23,18 @@ Text elements normally mean one date and one short phrase.
 
 Do not exceed moderate density within this framework. A request for a dense poster, collage, or multi-event spread is outside the default diary grammar; explain the conflict and ask whether to relax the mood-diary constraint.
 
+## Profile selection
+
+Count the final independently meaningful elements before naming the profile.
+Choose a profile whose stated limits contain every reported count. A profile
+label never overrides its limits: for example, two environmental cues do not
+fit `minimal`.
+
+If the final composition exceeds the selected profile, either remove or
+genuinely merge elements, or select a valid higher profile up to `moderate`.
+Do not count separately described or independently salient cues as one merely
+to preserve a lower-density label.
+
 ## Reduction order
 
 When over budget:

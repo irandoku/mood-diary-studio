@@ -8,7 +8,13 @@ Use a date only when it is:
 
 - explicitly provided by the user;
 - present in an authorized source;
-- requested as the current date and the host can verify it.
+- explicitly requested for display as the current date and the host can verify it.
+
+Host knowledge of the current date, including system or conversation metadata,
+is not user authorization to display it. Words such as `today` establish
+relative timing, not a request to add a calendar date. Without an authorized
+date source or an explicit request to display the current date, use
+`date.value: null` and `date.source: omitted`.
 
 Do not infer a calendar date from `today`, weekday, season, holiday, weather, or conversation order when the host cannot verify the intended date.
 
