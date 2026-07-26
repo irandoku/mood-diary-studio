@@ -21,6 +21,8 @@ authority:
 
 ## Conflicts
 
+## Style changes
+
 ## Proposed patch
 
 ```diff
@@ -31,6 +33,9 @@ authority:
 
 ## Decisions required
 
-## Update status
+## Availability and persistence
 
-Not applied.
+```yaml
+availability_state:
+persistence_state: not-applied
+```

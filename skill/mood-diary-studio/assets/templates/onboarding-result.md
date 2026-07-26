@@ -1,10 +1,41 @@
-# Character Onboarding Review
+# Character Approval
+
+## Approval summary
+
+- Must remain:
+- May vary:
+- Left undecided:
+- Style policy:
+- Storage outcome:
+
+## Review question
+
+- Approve this exact candidate content, or revise:
+
+## Review artifact
+
+- Delivery: `separate-artifact`, `collapsed-inline`, or `inline-appendix`
+- Label:
+- Contains: complete evidence ledger, candidate `character.md`, storage binding,
+  and availability/persistence state
+- Saving status: delivery alone is not `host-saved` or `pack-installed`
+
+<!-- For quick review, place the complete artifact after the question using the
+first host-supported delivery method. For guided or advanced review, the
+sections below may remain in the primary response. -->
+
+# Character Onboarding Review Artifact
 
 ## Intake
 
 - Proposed name:
 - Type:
 - User-provided facts:
+
+## Review level
+
+- Level: `quick`, `guided`, or `advanced`
+- Risk triggers:
 
 ## Reference quality
 
@@ -20,13 +51,22 @@
 
 ## Canonical-role decisions
 
+## Style policy
+
+```yaml
+policy: diary-default
+source: framework-default
+guidance: []
+strength: soft
+per_entry_override: allowed
+conflicts: []
+```
+
 ## Candidate character.md
 
 ```markdown
 <!-- Include the complete candidate card here. -->
 ```
-
-## Review questions
 
 ## Storage binding
 
@@ -43,10 +83,13 @@ authority:
 
 - Not supplied.
 
-## Install status
+## Availability and persistence
 
-Select one: `not-installed`, `available-in-context`, or `export-ready`.
+```yaml
+availability_state: in-context
+persistence_state: export-ready
+```
 
-For a newly drafted card that still needs host-managed or manual saving, use
-`export-ready`. Use `available-in-context` only when the character card itself
-is already readable from the current project or chat.
+Use `host-saved` only after verifying the exact artifact in persistent
+host-managed storage. Use `pack-installed` only after the approved persistent
+pack was re-read successfully.

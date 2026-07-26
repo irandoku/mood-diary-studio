@@ -13,6 +13,10 @@ Require:
 
 Treat the existing card as current policy, not unquestionable visual truth. Treat new references as evidence, not automatic replacement authority.
 
+Read v1 cards without inventing style canon. Propose a v2 migration only when
+the user wants a long-term style policy or another approved revision warrants
+it.
+
 ## Comparison
 
 Classify each relevant item:
@@ -25,6 +29,13 @@ Classify each relevant item:
 - **missing evidence** — the new reference cannot confirm an existing rule;
 - **unresolved** — evidence or intent is insufficient.
 
+Classify style separately as:
+
+- **long-term style change** — changes the approved card policy;
+- **per-entry override** — affects only the current diary;
+- **style conflict** — references or user instructions disagree;
+- **conditioning unknown** — the observed output cannot be attributed to the card.
+
 Absence from one view is not proof of removal.
 
 ## Change policy
@@ -33,6 +44,8 @@ Absence from one view is not proof of removal.
 - Do not convert a contextual variant into a permanent rule based on repetition alone.
 - Do not delete an anchor because it is occluded.
 - Separate wording clarification from design change.
+- Keep identity changes separate from style-policy changes.
+- Do not make a per-entry style override canonical.
 - Preserve history when a canonical decision changes.
 
 ## Delivery
@@ -45,10 +58,11 @@ Return:
 4. additions;
 5. contextual variants;
 6. conflicts and their impact;
-7. proposed patch;
-8. items deliberately left untouched;
-9. questions requiring user authority;
-10. `update_status: not-applied`.
+7. style changes and conditioning unknowns;
+8. proposed patch;
+9. items deliberately left untouched;
+10. questions requiring user authority;
+11. availability and `persistence_state: not-applied`.
 
 Use `assets/templates/audit-result.md`.
 

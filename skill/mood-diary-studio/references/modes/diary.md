@@ -12,7 +12,10 @@ Accept:
 - an optional date or short phrase;
 - optional output-language, aspect-ratio, or visual-density preferences.
 
-Resolve the character source through `references/schema/storage-profiles.md`. A bundled sample is read-only. A project source or chat attachment is available in context, not installed.
+Resolve the character source through `references/schema/storage-profiles.md`.
+A bundled sample is read-only. A project source, account-library selection, or
+chat attachment may be in context without being installed in a character pack.
+An unverified task VM is `runtime-filesystem`, not persistent storage.
 
 If no approved card exists, allow a user-authorized reference-only character for this result, but label identity as ephemeral and do not claim cross-entry consistency. Do not silently create or install a card.
 
@@ -29,6 +32,18 @@ List only facts that affect the illustration. Separate:
 - exact user-provided text and date.
 
 Do not treat imagined activity as completed activity.
+
+Assign the primary scene an evidence status: `actual`, `desired`, `imagined`,
+or `uncertain`. Preserve that status in editorial selection, composition, and
+the final prompt. Use status-specific language:
+
+- `desired` — describe a wish, wanted scene, or longing; do not call it
+  imagined or a mental scene;
+- `imagined` — describe an imagined, remembered-as-imagined, or mental scene;
+- `uncertain` — describe a possibility whose occurrence is unresolved.
+
+Any of these scenes may be visualized, but never describe it as a completed
+event unless its status is `actual`.
 
 ### 2. Select one emotional center
 
@@ -52,6 +67,11 @@ For each event or object, mark:
 
 Keep one primary action or state.
 
+Do not invent a proxy object to stand for unknown event content or causes. If
+the user says an unspecified task was completed, do not add documents,
+checklists, tools, trophies, or generic work artifacts to prove completion.
+Express the change through sourced action, posture, spacing, and environment.
+
 ### 4. Translate emotion into space
 
 Use `references/editorial/mood-to-scene.md`. Decide:
@@ -65,7 +85,10 @@ Use `references/editorial/mood-to-scene.md`. Decide:
 
 ### 5. Enforce visual budget
 
-Use `references/editorial/visual-budget.md`. If the composition exceeds the selected profile, remove or merge elements before writing the prompt.
+Use `references/editorial/visual-budget.md`. Count the final elements before
+naming the profile. If the composition exceeds the selected profile, remove or
+genuinely merge elements, or select a profile that contains the counts before
+writing the prompt.
 
 ### 6. Plan text and date
 
@@ -77,15 +100,49 @@ Use immutable anchors as requirements. Use flexible or contextual features only 
 
 Do not display every anchor like a product catalog. Preserve identity while keeping the diary action natural.
 
-Record the storage profile, locator, card version or candidate status, and availability state.
+Build the minimum sufficient prompt anchor set from the approved immutable
+visual anchors. Keep recognition-critical anchors and any qualifier whose
+removal would change silhouette, proportions, orientation, feature location,
+or required shape. Paraphrasing and grouping are allowed, but do not omit,
+invert, or weaken those semantics.
 
-### 8. Write the prompt
+For a simple mascot, express this set in one natural sentence. Prioritize:
+
+1. silhouette and proportion;
+2. a small number of recognition-critical features;
+3. an immutable prop only when it remains visible in the chosen action.
+
+Expand only when genuine character complexity requires it. Do not copy the full
+card or repeat the Character use inventory. Add a forbidden-drift item to the
+prompt's avoid language only when the current action, view, or medium makes that
+specific drift plausible; never duplicate the full forbidden-drift list.
+
+Record the storage profile, locator, card version or candidate status,
+availability state, and persistence state.
+
+### 8. Apply style guidance
+
+Use `references/schema/style-guidance.md`.
+
+1. Report the approved card's stored style policy and override rule without
+   changing their names or values.
+2. For a v1 card with no style block, report `per-entry` and `allowed` as
+   compatibility values; do not infer long-term style from its references.
+3. Resolve the effective entry style: apply an explicit current-entry request
+   first, otherwise use the stored guidance or diary default.
+4. Report the effective entry style separately. A current-entry request never
+   changes the stored policy to `user-selected`.
+
+Keep style guidance soft and portable. Never weaken identity anchors to satisfy
+medium, texture, line, or palette guidance.
+
+### 9. Write the prompt
 
 Use ordinary descriptive language. Include:
 
 1. diary medium or visual grammar requested by the user;
-2. one scene and one primary emotional action;
-3. approved character anchors;
+2. one scene, one primary emotional action, and the scene's evidence status;
+3. the compact approved prompt anchor set;
 4. composition, scale, and meaningful negative space;
 5. limited supporting cues;
 6. exact text only when approved;
@@ -93,7 +150,7 @@ Use ordinary descriptive language. Include:
 
 Do not include model names, API parameters, quality flags, seeds, or vendor syntax.
 
-### 9. Review
+### 10. Review
 
 Run `references/review/drift-review.md`. Revise once if any required check fails.
 

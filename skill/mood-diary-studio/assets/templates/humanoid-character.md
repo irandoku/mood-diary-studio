@@ -1,5 +1,5 @@
 ---
-schema: mood-diary-character/v1
+schema: mood-diary-character/v2
 id: candidate-id
 version: "0.1.0"
 status: candidate
@@ -85,6 +85,18 @@ Do not infer ethnicity, gender identity, exact age, health, personality, or back
 - Suitable symbols:
 - Density constraints:
 
+## Style guidance
+
+```yaml
+style:
+  policy: diary-default
+  source: framework-default
+  guidance: []
+  strength: soft
+  per_entry_override: allowed
+  conflicts: []
+```
+
 ## Unknowns
 
 - 
@@ -93,4 +105,4 @@ Do not infer ethnicity, gender identity, exact age, health, personality, or back
 
 | Version | Date | Approved change | Authority |
 |---|---|---|---|
-| 0.1.0 | unknown | Candidate created; not installed | pending review |
+| 0.1.0 | unknown | Candidate created; export-ready | pending review |

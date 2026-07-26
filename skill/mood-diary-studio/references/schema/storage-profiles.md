@@ -7,7 +7,7 @@ Separate the logical character-pack schema from the host-specific place that sup
 - Binding fields
 - Storage profiles
 - Resolution order
-- Status language
+- State language
 
 ## Binding
 
@@ -27,7 +27,9 @@ Use these field types and values:
 
 - `profile`: one of the profile names defined below;
 - `locator`: a host-valid string, or `none` for `manual-export`;
-- `persistence`: `skill-scoped`, `persistent`, `workspace-scoped`, `host-managed`, `chat-scoped`, or `user-controlled-after-export`;
+- `persistence`: `skill-scoped`, `persistent`, `workspace-scoped`,
+  `host-managed`, `account-scoped`, `task-scoped`, `chat-scoped`, or
+  `user-controlled-after-export`;
 - `readable`: a boolean describing current host capability;
 - `writable`: a boolean describing current host capability, not approval to write;
 - `authority`: `user-provided`, `authorized-context`, or `host-context`.
@@ -75,6 +77,32 @@ Use for a host-managed project or knowledge area that exposes selected files as 
 - Locator: a logical label such as `project-sources`.
 - Rule: return artifacts for the user or host to add; do not claim a filesystem installation.
 
+### account-library
+
+Use for an account- or workspace-managed file library that can supply saved
+files to later conversations.
+
+- Persistence: `account-scoped` for a personal library or `host-managed` for a
+  workspace library.
+- Read: only after the exact file is selected or attached to the current task.
+- Direct Skill write: no unless the host exposes and authorizes a verifiable
+  save mechanism.
+- Locator: a host-valid file identifier or unique filename, never an invented
+  local path.
+- Rule: a file visible in a library may be `host-saved` without being
+  `in-context` or installed in a character pack.
+
+### runtime-filesystem
+
+Use for a task VM, sandbox, container, or temporary filesystem that has not
+been verified across a fresh task.
+
+- Persistence: `task-scoped`.
+- Read and write: according to current task capability.
+- Locator: the exact runtime path.
+- Rule: use only for assembly, validation, and packaging. Never call a runtime
+  path persistent or `pack-installed` without a clean-task persistence test.
+
 ### chat-attachments
 
 Use for files attached to the current conversation.
@@ -101,30 +129,59 @@ Use when no readable persistent pack binding exists or the host cannot write.
    absolute path resolves to `local-filesystem`; a host-supplied
    workspace-relative binding resolves to `workspace-files`.
 2. Otherwise use a binding already established in the current authorized workspace or project context.
-3. Otherwise derive `chat-attachments` only when the current character files are attached.
-4. Otherwise use `manual-export`.
+3. Otherwise use an exact account-library file selected for the current task.
+4. Otherwise derive `chat-attachments` only when the current character files are attached.
+5. Treat an unverified task VM or sandbox as `runtime-filesystem`.
+6. Otherwise use `manual-export`.
 
 Do not search arbitrary directories, infer a path from platform conventions, or reuse an uncertain binding from another project.
 
-## Status language
+## State language
 
-Use these states precisely. A state describes the character card being read or
-produced, not merely a reference image used to draft it:
+Report availability and persistence separately. States describe the character
+card or complete plugin, not merely a reference image.
+
+`availability_state`:
+
+- `in-context` — the exact card is readable in the current task;
+- `not-in-context` — the card may exist elsewhere but is not readable now;
+- `unknown` — current readability has not been verified.
+
+`persistence_state`:
 
 - `bundled-sample` — public read-only fixture shipped with the Skill;
-- `available-in-context` — an existing character card is readable in a project, workspace, or chat but is not installed into a character pack;
-- `not-installed` — candidate exists but no persistent install occurred;
-- `export-ready` — a complete new candidate or revision artifact is ready for host-managed or manual saving;
-- `installed` — the approved plugin is present in a persistent pack and was
-  re-read successfully, either after an approved write or after verifying that
-  an existing target is byte-identical to the complete approved plugin;
-- `not-applied` — an audit patch was proposed but not written.
+- `transient` — exists only in current task, chat, or unverified runtime storage;
+- `export-ready` — complete artifact is ready for user-controlled or
+  host-managed saving, but saving has not been verified;
+- `host-saved` — the exact artifact was verified in host-managed persistent
+  storage, but not installed into a character pack;
+- `pack-installed` — the approved plugin is present in an approved persistent
+  pack and was re-read successfully, either after an approved write or after
+  verifying that an existing target is byte-identical;
+- `not-applied` — an audit patch was proposed but not written or saved.
 
-For example, a managed-project reference image can be available in context while
-a newly drafted candidate card remains `export-ready`. Use
-`available-in-context` only when the character card itself is already readable
-from that context.
+Examples:
 
-Never report `installed` based only on generating, uploading, attaching, or
-displaying a candidate card. When installation is an idempotent no-op, state
-explicitly that no write was performed.
+- a new candidate returned in a managed project:
+  `availability_state: in-context`, `persistence_state: export-ready`;
+- a Library file not selected in the current chat:
+  `availability_state: not-in-context`, `persistence_state: host-saved`;
+- a card attached to the current chat:
+  `availability_state: in-context`, `persistence_state: transient`;
+- an approved local pack re-read after installation:
+  `availability_state: in-context`, `persistence_state: pack-installed`.
+
+Legacy v1 output labels may be read as follows:
+
+- `available-in-context` maps to `availability_state: in-context` with
+  persistence determined from the binding;
+- `export-ready` maps to `persistence_state: export-ready`;
+- `installed` maps to `persistence_state: pack-installed` only when the
+  persistent re-read evidence is present;
+- `not-applied` maps to `persistence_state: not-applied`;
+- `not-installed` is ambiguous and must not be emitted by new outputs.
+
+Never report `host-saved` from a generated download link alone. Never report
+`pack-installed` based on generating, uploading, attaching, exporting,
+displaying, or saving a file in Library or project sources. When installation
+is an idempotent no-op, state explicitly that no write was performed.
