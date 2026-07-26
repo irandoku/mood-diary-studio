@@ -21,6 +21,8 @@ If image inspection is unavailable, the host must not convert guesses into obser
 | Exact persistent path with read/write permission | `local-filesystem` | Can install after review and approval |
 | Controlled workspace files | `workspace-files` | Can install only when the workspace exposes an approved write target |
 | Managed project or knowledge sources | `managed-project` | Read in context; return an artifact for host-managed saving |
+| Account or workspace file library | `account-library` | Reuse a verified host-saved artifact; do not claim pack installation |
+| Task VM, sandbox, or container | `runtime-filesystem` | Assemble and validate only; treat as transient |
 | Conversation attachments only | `chat-attachments` | Read in the current chat; do not claim installation |
 | No persistent readable or writable storage | `manual-export` | Return the complete artifact |
 
@@ -41,14 +43,22 @@ Do not promote one evidence level into another.
 |---|---|---|
 | Codex Desktop on macOS | Host verified | Local Skill discovery; image-based ONBOARD; review-gated `local-filesystem` installation with relative reference resolution and post-write re-read; DIARY with an approved installed character card; model-neutral prompt delivery |
 | Codex Desktop on macOS | Behavior tested | Public-safe AUDIT and existing-target acceptance cases, including absolute-path binding and byte-identical idempotent installation |
-| ChatGPT Work on web | Host verified | Uploaded Skill package discovery; image-based ONBOARD; review-gated `manual-export` with an approved character card and byte-identical reference image; validated ZIP download; cross-chat character-package import; DIARY brief and model-neutral prompt delivery |
+| ChatGPT Work on web | Host verified | Uploaded Skill package discovery; quick image-based ONBOARD; review-gated schema-v2 approval; transient `manual-export`; independently validated ZIP download; fresh-chat character-package import; DIARY brief and model-neutral prompt delivery |
 | Hermes | Specified only | Not yet behavior tested or host verified |
 
 The Codex Desktop and ChatGPT Work verifications were completed on 2026-07-26.
 Image rendering was requested separately through each host after DIARY delivered
-its prompt; rendering is not a capability of this Skill. In both hosts, the
-approved character anchors remained recognizable in the rendered result without
-turning contextual work clothing into a permanent identity requirement.
+its prompt; rendering is not a capability of this Skill. The user observed the
+approved identity anchors and diary intent in the rendered samples. This is
+sample evidence, not a promise of deterministic output or exact
+cross-generation identity.
+
+The latest Work export preserved the host-exposed attachment bytes through
+runtime assembly and ZIP download. Independent comparison with the user's
+original macOS PNG found identical dimensions and RGB pixels, while Work's
+representation added a fully opaque alpha channel. The two files were therefore
+pixel-identical but not byte-identical. Compatibility claims keep host attachment
+fidelity separate from cross-host source-byte fidelity.
 
 On ChatGPT web, installed Skills were available in Work but not in ordinary
 Chat during verification. Work exposed a writable cloud VM filesystem for
@@ -58,6 +68,16 @@ from the user's macOS `/tmp` at the same path. These runtime paths are not
 verified persistent character-pack bindings: the tested web workflow correctly
 reported `manual-export` and `not installed`, then reloaded the downloaded
 package as a chat attachment in a fresh Work chat.
+
+[OpenAI documents Projects](https://help.openai.com/en/articles/10169521-projects-in-chatgpt)
+as retained chat, file, instruction, and memory context, and documents that
+[Work can start from an existing Project](https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex).
+OpenAI also documents
+[account or workspace Library reuse](https://help.openai.com/en/articles/20001052-file-storage-and-library-in-chatgpt)
+for uploaded and created files. These product features do not by themselves
+verify that a Skill can create a Project, add or replace a project source,
+select a Library destination, or delete a saved artifact. Keep those actions
+user-managed until the exact Work capability is behavior-tested.
 
 ## Runtime neutrality
 

@@ -9,6 +9,7 @@ Daily account or character evidence
        Mood Diary Studio
        - editorial decisions
        - character governance
+       - style governance
        - output contracts
                 |
                 v
@@ -19,6 +20,30 @@ Daily account or character evidence
 ```
 
 The framework owns editorial reasoning and review gates. It does not own image rendering, host storage, or private character identity.
+
+## Guardrails and degrees of freedom
+
+The framework uses low freedom only where a mistake changes authority or data:
+
+- evidence and scene status;
+- approved identity and canonical-role changes;
+- stored style policy versus per-entry style;
+- date and text authorization;
+- storage capability, availability, and persistence; and
+- review, write, update, and delete approval.
+
+It keeps high freedom where several results can be equally valid:
+
+- emotional wording;
+- composition and negative-space treatment;
+- sparse supporting cues;
+- visual-budget profile selection when the reported counts fit; and
+- model-neutral prompt phrasing.
+
+This boundary prevents validation from overfitting one stochastic model sample.
+Acceptance tests evaluate semantic and governance invariants, not exact output
+strings. Model variation becomes actionable only when it reproducibly crosses a
+boundary or changes a downstream operation.
 
 ## Portable Skill
 
@@ -75,6 +100,38 @@ canonical_role:
 ```
 
 Direct visibility can confirm that an item appears in one reference. It cannot by itself prove that the item is immutable.
+
+## Identity and style
+
+Character schema v2 keeps identity and rendering style separate:
+
+```text
+Identity policy                 Style policy
+- immutable anchors            - reference-guided
+- flexible attributes          - diary-default
+- contextual variants          - user-selected
+- forbidden drift              - per-entry
+```
+
+Style guidance is soft, portable, and overridable per entry. It must not become
+an immutable identity anchor merely because a reference image has a distinctive
+medium, line treatment, palette, or texture. V1 cards remain readable and have
+no inferred long-term style policy.
+
+## Availability and persistence
+
+Storage state has two dimensions:
+
+```yaml
+availability_state: in-context
+persistence_state: host-saved
+```
+
+This prevents a project source, Library file, chat attachment, runtime path, and
+persistent character-pack installation from being treated as equivalent.
+`runtime-filesystem` is task-scoped. `account-library` and `managed-project`
+may be host-saved, but only an approved persistent pack that was re-read can be
+`pack-installed`.
 
 ## Public and private separation
 
