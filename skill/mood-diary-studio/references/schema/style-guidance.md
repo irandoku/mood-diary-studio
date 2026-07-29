@@ -22,7 +22,8 @@ Allowed policies:
 
 - `reference-guided` — softly follow user-approved, non-identity rendering
   qualities observed across coherent references;
-- `diary-default` — use the current diary brief's restrained visual grammar;
+- `diary-default` — use the current diary brief's focused editorial grammar
+  without imposing a fixed rendering aesthetic;
 - `user-selected` — use generic style guidance explicitly supplied or approved
   by the user;
 - `per-entry` — store no long-term default and decide in each DIARY task.
@@ -56,6 +57,16 @@ line, shape language, palette behavior, texture, and visual density.
   substantially different scenes and media.
 - Let the current DIARY request override stored guidance unless the card
   explicitly records `per_entry_override: requires-approval`.
+
+`diary-default` is not a house style. It does not prescribe a fixed medium,
+paper tint, palette temperature, outline weight, or density profile. When the
+user and approved card supply no rendering treatment, use portable,
+medium-neutral diary-illustration language and only the hierarchy needed by
+the scene. Do not silently add warm or yellowed paper, nostalgic brown
+grading, heavy or uniform cartoon outlines, or any named visual style.
+
+Control focus through value, color, detail, and spatial hierarchy rather than
+by removing the setting or applying a global muted filter.
 
 ## DIARY reporting
 

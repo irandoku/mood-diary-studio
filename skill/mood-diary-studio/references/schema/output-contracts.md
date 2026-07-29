@@ -22,16 +22,23 @@ Return complete Markdown using the selected mode's headings. Keep reasoning conc
 
 Requirements:
 
-- distinguish actual, imagined, and uncertain events;
+- distinguish source-supported facts, direct observations, inferences,
+  unknowns, and editorial staging;
 - label the primary scene `actual`, `desired`, `imagined`, or `uncertain` and
   preserve that status in the composition and final prompt;
 - use status-specific wording; do not relabel `desired` as `imagined` or
   `imagined` as `desired`;
 - introduce no proxy object for unknown event content, causes, or completion
   evidence;
+- label unsourced illustrative environment as `editorially constructed` or
+  `inferred`, never as a source fact;
+- distinguish source-supported elements from editorial staging in the final
+  prompt without adding a new event, person, location, cause, or completion state;
 - show kept, merged, omitted, and echoed elements;
 - report budget counts that fit the named profile;
-- name the function of negative space;
+- report one unified scene, a detail-concentration zone, and the function of
+  the breathing or negative-space zone;
+- do not remove functional environment merely to claim a lower-density profile;
 - identify the character-card version or reference-only status;
 - preserve a minimum sufficient approved prompt anchor set without weakening
   or contradicting identity-bearing qualifiers, and without repeating the full

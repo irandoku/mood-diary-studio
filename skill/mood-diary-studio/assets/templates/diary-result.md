@@ -34,13 +34,15 @@ persistence_state:
 - Primary action or state and evidence status:
 - Character scale and zone:
 - Gaze or motion:
-- Negative-space zone and function:
-- Supporting cues:
+- Unified scene:
+- Detail-concentration zone:
+- Breathing or negative-space zone and function:
+- Supporting cues and provenance:
 
 ## Visual budget
 
 ```yaml
-profile: sparse
+profile:
 primary_subject:
 primary_action_or_state:
 supporting_objects:

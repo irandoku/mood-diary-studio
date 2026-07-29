@@ -1,11 +1,11 @@
 ---
 name: mood-diary-studio
-description: Turn daily experiences into low-density, character-led mood diary illustration briefs and model-neutral prompts; draft review-gated character cards from visual references; and audit existing character cards against new references. Use when creating a character mood diary, onboarding a user-provided character, or reviewing character identity drift.
+description: Turn daily experiences into focused, character-led mood diary illustration briefs and model-neutral prompts; draft review-gated character cards from visual references; and audit existing character cards against new references. Use when creating a character mood diary, onboarding a user-provided character, or reviewing character identity drift.
 ---
 
 # Mood Diary Studio
 
-Convert lived experience into a restrained diary illustration decision, then express that decision as a model-neutral prompt. Treat character identity as user-governed data rather than built-in lore.
+Convert lived experience into a focused diary illustration decision, then express that decision as a model-neutral prompt. Treat character identity as user-governed data rather than built-in lore.
 
 ## Select a mode
 
@@ -19,8 +19,8 @@ If the request mixes modes, complete ONBOARD or AUDIT review before DIARY uses c
 
 1. Separate user-provided facts, direct observations, inferences, and unknowns.
 2. Reduce the entry to one emotional center before composing.
-3. Preserve only elements that communicate that center.
-4. Treat negative space as narrative structure, not leftover decoration.
+3. Choose one focused scene and preserve elements that communicate that center.
+4. Treat detail concentration and breathing space as narrative structure; breathing space need not be blank.
 5. Use only approved character facts as identity requirements.
 6. Keep character identity separate from rendering style.
 7. Resolve the character source and storage profile before claiming availability or persistence.

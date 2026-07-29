@@ -1,6 +1,6 @@
 # DIARY Mode
 
-Turn a daily account into one restrained, character-led diary illustration brief and one model-neutral prompt.
+Turn a daily account into one focused, character-led diary illustration brief and one model-neutral prompt.
 
 ## Inputs
 
@@ -72,15 +72,25 @@ the user says an unspecified task was completed, do not add documents,
 checklists, tools, trophies, or generic work artifacts to prove completion.
 Express the change through sourced action, posture, spacing, and environment.
 
+Editorial staging may add a non-factual illustrative environment only within
+the boundary in `references/editorial/mood-to-scene.md`. Label each unsourced
+choice in Editorial selection as `editorially constructed` or `inferred`,
+never as a source fact. It may carry a known emotion, time quality, distance,
+or expectation, but must not add a new event, person, location, cause, or
+completion state, and must not act as a proxy for unknown content. Remove it
+when its removal would not weaken the emotional relationship.
+
 ### 4. Translate emotion into space
 
 Use `references/editorial/mood-to-scene.md`. Decide:
 
 - posture and gaze;
 - character scale;
-- occupied and empty areas;
+- one unified scene and its primary spatial relationship;
+- a detail-concentration zone and a breathing zone;
 - object distance;
 - environmental motion;
+- environmental cues grouped by their shared narrative function;
 - one optional symbolic element.
 
 ### 5. Enforce visual budget
@@ -89,6 +99,10 @@ Use `references/editorial/visual-budget.md`. Count the final elements before
 naming the profile. If the composition exceeds the selected profile, remove or
 genuinely merge elements, or select a profile that contains the counts before
 writing the prompt.
+
+Select density from the emotional and narrative need, not from a default
+`sparse` assumption or only from an explicit request for richness. Do not
+remove functional environment merely to claim a lower-density profile.
 
 ### 6. Plan text and date
 
@@ -143,8 +157,8 @@ Use ordinary descriptive language. Include:
 1. diary medium or visual grammar requested by the user;
 2. one scene, one primary emotional action, and the scene's evidence status;
 3. the compact approved prompt anchor set;
-4. composition, scale, and meaningful negative space;
-5. limited supporting cues;
+4. composition, scale, detail concentration, and meaningful breathing space;
+5. source-supported cues and any clearly labeled editorial staging;
 6. exact text only when approved;
 7. a concise avoid list.
 

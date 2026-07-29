@@ -17,11 +17,13 @@ Avoid theatrical body language unless the source clearly supports it.
 
 ### Space
 
-- isolation: greater empty area and separated objects;
+- isolation: separated relationships and a breathing zone whose distance is
+  visually legible;
 - possibility: open space ahead of the gaze;
 - pressure: reduced breathing room without filling every surface;
 - lingering thought: a faint echo near the edge rather than a second full scene;
-- recovery: stable horizontal composition and fewer visual demands.
+- recovery: stable horizontal composition, clear hierarchy, and a calm
+  breathing zone.
 
 ### Motion
 
@@ -31,9 +33,28 @@ Use one restrained motion cue when helpful: a curtain edge, loose page, ribbon, 
 
 Prefer distance, orientation, and interruption over extra props. An untouched cup placed beyond reach may communicate more than several literal emotion icons.
 
-Use only source-supported or explicitly approved scene objects. Do not create a
-document, checklist, tool, package, or other proxy object to represent an
-event whose content is unknown.
+Scene objects that imply activity, place, cause, or completion must be
+source-supported or explicitly approved. Do not create a document, checklist,
+tool, package, or other proxy object to represent an event whose content is
+unknown.
+
+## Editorial staging boundary
+
+Allow an illustrative environment such as natural light, a curtain, distant
+sky, plant shadow, spatial threshold, or layered everyday setting when it:
+
+- carries only a known emotion, time quality, distance, or expectation;
+- is marked `editorially constructed` or `inferred` in the brief rather than
+  reported as user-provided fact or direct observation;
+- remains part of one unified scene and introduces no new event, person,
+  specific location, cause, or completion state;
+- does not stand in for unknown event content, evidence, or a message source;
+- would weaken the emotional relationship if removed.
+
+Do not construct disaster areas, rescue activity, casualties, news devices,
+or unobserved event scenes unless reliable source evidence specifically
+supports them. Editorial staging may shape an emotional setting; it may not
+manufacture the event being felt about.
 
 ## Symbolic elements
 

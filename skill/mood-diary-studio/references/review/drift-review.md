@@ -13,8 +13,16 @@ Run the relevant checks before delivering any mode.
       status remains consistent through selection, composition, and prompt.
 - [ ] Status wording remains exact: a `desired` scene is not relabeled
       `imagined`, and an `imagined` scene is not relabeled `desired`.
-- [ ] Negative space has a named narrative function.
-- [ ] The result is a diary illustration, not a poster, collage, character sheet, or catalog.
+- [ ] Functional environment was not deleted merely to force a lower-density profile.
+- [ ] Negative space has a named narrative function and is not assumed to mean
+      a blank or single-color background.
+- [ ] The composition has a detail-concentration zone and a breathing zone
+      rather than uniform detail or uniform emptiness.
+- [ ] Every environmental cue serves the same emotional center and unified scene.
+- [ ] The environment supports the character-led diary rather than becoming a
+      background showcase.
+- [ ] The result is a diary illustration, not a poster, collage, character
+      sheet, catalog, or prop list.
 - [ ] Facial expression is not carrying the entire emotional meaning.
 - [ ] Text remains subordinate and factually sourced.
 - [ ] A current date appears only when the user explicitly requested it for
@@ -50,11 +58,18 @@ Run the relevant checks before delivering any mode.
       `requires-approval`; it is never `forbidden`.
 - [ ] Per-entry style does not silently revise the character card.
 - [ ] Style remains soft, portable, and subordinate to identity.
+- [ ] Style freedom does not weaken or override immutable identity anchors.
 - [ ] Output differences are not attributed to the card without controlled evidence.
 
 ## Evidence drift
 
 - [ ] Direct observation, user fact, inference, and unknown remain distinguishable.
+- [ ] Editorial staging is labeled `editorially constructed` or `inferred` and
+      is not reported as user fact or direct observation.
+- [ ] Editorial staging introduces no new event, person, specific location,
+      cause, completion state, or message source.
+- [ ] No disaster area, rescue activity, casualty, news device, or unobserved
+      event scene is invented without reliable source support.
 - [ ] No invented proxy object stands in for unknown event content, causes, or
       completion evidence.
 - [ ] A visible item is not automatically classified as immutable.
