@@ -80,10 +80,39 @@ or expectation, but must not add a new event, person, location, cause, or
 completion state, and must not act as a proxy for unknown content. Remove it
 when its removal would not weaken the emotional relationship.
 
+### 3.5 Preserve theme legibility
+
+If the entry names a concrete topic (an event, place, season, commemoration,
+cultural topic, or another explicitly named subject beyond a generic mood),
+identify at least one non-text theme carrier before choosing a density profile.
+A carrier may be a source-supported setting, contextual garment,
+activity relationship, meaningful object, or environmental condition. An
+editorially constructed or inferred carrier is allowed only within the
+`mood-to-scene.md` staging boundary and must be labeled as such. Use more than
+one when the topic would otherwise be ambiguous, but do not add props just to
+raise a count.
+
+Run two quick tests:
+
+- **Caption removal** — hide the date and phrase; the scene must still convey
+  the topic at a recognizable level.
+- **Character substitution** — replace the approved character with a neutral
+  figure; the setting and relationships must still communicate the topic and
+  emotional orientation.
+
+If either test fails, revise the scene carriers before lowering or raising the
+visual density. A low-density page may use fewer carriers; it may not use zero
+when the entry has an explicit topic. Do not use text, a generic background, or
+the mascot's pose as the sole evidence of the topic.
+
 ### 4. Translate emotion into space
 
 Use `references/editorial/mood-to-scene.md`. Decide:
 
+- approved silhouette, proportion, and limb geometry before selecting any
+  furniture or support surface;
+- character-environment fit, including support contact, furniture scale, and
+  explainable occlusion;
 - posture and gaze;
 - character scale;
 - one unified scene and its primary spatial relationship;

@@ -11,6 +11,7 @@ Decide:
 - character scale: small, medium, or close;
 - character zone;
 - gaze or motion direction;
+- character-environment fit before selecting furniture or support surfaces;
 - detail-concentration zone;
 - breathing zone;
 - supporting-object zone;
@@ -23,6 +24,16 @@ Concentrate high contrast, sharper edges, texture, and object specificity in
 one detail zone. Keep the breathing zone quieter through lower contrast,
 lighter detail, greater spacing, or continuous atmosphere rather than
 automatically erasing the setting.
+
+## Character-environment fit
+
+Before selecting furniture or support surfaces, apply the approved character's
+silhouette, proportions, and limb geometry. Match the support contact and
+furniture scale to the character, keep occlusion explainable by the action, and
+account for the lower body rather than letting it disappear without a reason.
+Compact or short mascots should default to a ground-level relationship or low
+seat; use a tabletop, high perch, or human-scale furniture only when the entry
+provides a narrative reason.
 
 ## Narrative functions
 
@@ -45,9 +56,9 @@ automatically filling or blanking it.
 ## Scene coherence
 
 Use one complete, focused scene. Let every environmental cue support the same
-emotional center and spatial relationship. Under `moderate`, 2-4 cues may form
-a coherent setting, but they must not compete with the character or become a
-background showcase.
+emotional center and spatial relationship. Under `moderate`, 2-4 cues and under
+`layered`, 4-6 cues may form a coherent setting, but they must not compete with
+the character or become a background showcase.
 
 ## Avoid
 

@@ -35,8 +35,10 @@ The framework uses low freedom only where a mistake changes authority or data:
 It keeps high freedom where several results can be equally valid:
 
 - emotional wording;
+- presence of a non-text theme carrier for a concrete topic (hard invariant);
+- choice and arrangement of those carriers (high freedom);
 - composition and negative-space treatment;
-- sparse supporting cues;
+- supporting cues at narrative-appropriate density;
 - visual-budget profile selection when the reported counts fit; and
 - model-neutral prompt phrasing.
 

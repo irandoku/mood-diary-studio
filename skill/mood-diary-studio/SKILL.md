@@ -20,13 +20,20 @@ If the request mixes modes, complete ONBOARD or AUDIT review before DIARY uses c
 1. Separate user-provided facts, direct observations, inferences, and unknowns.
 2. Reduce the entry to one emotional center before composing.
 3. Choose one focused scene and preserve elements that communicate that center.
-4. Treat detail concentration and breathing space as narrative structure; breathing space need not be blank.
-5. Use only approved character facts as identity requirements.
-6. Keep character identity separate from rendering style.
-7. Resolve the character source and storage profile before claiming availability or persistence.
-8. Produce prompts in ordinary descriptive language without vendor syntax.
-9. Run drift review before delivery.
-10. Match the user's language unless the user requests another language.
+4. In DIARY mode, if the entry names a concrete topic (an event, place, season,
+   commemoration, cultural topic, or another explicitly named subject beyond a
+   generic mood), preserve at least one non-text theme carrier; density may
+   vary but topic relevance cannot be zero.
+5. Treat detail concentration and breathing space as narrative structure;
+   breathing space need not be blank.
+6. Use only approved character facts as identity requirements.
+7. Keep character identity separate from rendering style.
+8. Resolve the character source and storage profile before claiming availability
+   or persistence.
+9. Produce prompts in ordinary descriptive language without vendor syntax.
+10. In DIARY mode, run caption-removal and character-substitution checks before
+    the drift review.
+11. Match the user's language unless the user requests another language.
 
 ## Protect character governance
 

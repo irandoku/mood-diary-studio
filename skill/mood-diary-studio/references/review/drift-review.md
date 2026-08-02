@@ -6,7 +6,19 @@ Run the relevant checks before delivering any mode.
 
 - [ ] One emotional center governs the page.
 - [ ] The composition contains one primary action or state.
+- [ ] When the entry names a concrete topic, the scene has at least one
+      non-text theme carrier supported by the entry, an authorized source, or
+      explicitly marked editorial staging within the `mood-to-scene.md`
+      boundary.
+- [ ] Caption-removal test passes: hiding the date and phrase does not erase
+      the topic.
+- [ ] Character-substitution test passes: replacing the mascot with a neutral
+      figure does not erase the topic or emotional orientation.
 - [ ] Visual budget is within the selected profile.
+- [ ] Requested density preference, selected profile, and selection rationale
+      are reported; an omitted preference is explicitly marked as omitted.
+- [ ] Each theme carrier has a budget category and any role-sharing is stated;
+      no carrier is hidden from the reported counts.
 - [ ] Every reported visual-budget count fits the named profile; independently
       meaningful elements were not merged only to lower the count.
 - [ ] The primary scene's `actual`, `desired`, `imagined`, or `uncertain`
@@ -14,10 +26,21 @@ Run the relevant checks before delivering any mode.
 - [ ] Status wording remains exact: a `desired` scene is not relabeled
       `imagined`, and an `imagined` scene is not relabeled `desired`.
 - [ ] Functional environment was not deleted merely to force a lower-density profile.
+- [ ] Density was adjusted to the narrative need without reducing explicit-topic
+      relevance to zero.
 - [ ] Negative space has a named narrative function and is not assumed to mean
       a blank or single-color background.
 - [ ] The composition has a detail-concentration zone and a breathing zone
       rather than uniform detail or uniform emptiness.
+- [ ] Approved silhouette, proportion, and limb geometry were applied before
+      selecting furniture or support surfaces.
+- [ ] Character-environment fit accounts for support contact, furniture scale,
+      and explainable occlusion; compact or short mascots are not placed on
+      human-scale furniture without a narrative reason.
+- [ ] A `layered` budget is non-default, uses its stated counts, and is chosen
+      only when environmental, commemorative, cultural, or seasonal context
+      carries the narrative while retaining one action, one scene, a detail
+      zone, and a breathing zone.
 - [ ] Every environmental cue serves the same emotional center and unified scene.
 - [ ] The environment supports the character-led diary rather than becoming a
       background showcase.
@@ -58,6 +81,10 @@ Run the relevant checks before delivering any mode.
       `requires-approval`; it is never `forbidden`.
 - [ ] Per-entry style does not silently revise the character card.
 - [ ] Style remains soft, portable, and subordinate to identity.
+- [ ] When no current-entry or approved stored treatment is more specific, the
+      bright-neutral diary fallback is used as soft entry guidance rather than
+      a fixed identity style; full-frame yellow-brown or nostalgic grading and
+      heavy uniform outlines are not silently added.
 - [ ] Style freedom does not weaken or override immutable identity anchors.
 - [ ] Output differences are not attributed to the card without controlled evidence.
 
@@ -72,6 +99,12 @@ Run the relevant checks before delivering any mode.
       event scene is invented without reliable source support.
 - [ ] No invented proxy object stands in for unknown event content, causes, or
       completion evidence.
+- [ ] Culturally specific clothing, patterns, ceremonies, symbols, and factual
+      labels have a `user-provided` or reliable authorized source, or their
+      specificity is reduced when unconfirmed.
+- [ ] A conflict between a factual displayed label and a reliable source is
+      reported and kept unresolved pending approval; it is never silently
+      rewritten or omitted.
 - [ ] A visible item is not automatically classified as immutable.
 - [ ] Occlusion is not interpreted as absence.
 - [ ] Repetition is not treated as user approval.

@@ -57,13 +57,27 @@ line, shape language, palette behavior, texture, and visual density.
   substantially different scenes and media.
 - Let the current DIARY request override stored guidance unless the card
   explicitly records `per_entry_override: requires-approval`.
+- Resolve the effective entry style in this order: an allowed explicit
+  current-entry request, approved stored guidance, then the fallback baseline
+  below when neither supplies a more specific treatment.
 
-`diary-default` is not a house style. It does not prescribe a fixed medium,
-paper tint, palette temperature, outline weight, or density profile. When the
-user and approved card supply no rendering treatment, use portable,
-medium-neutral diary-illustration language and only the hierarchy needed by
-the scene. Do not silently add warm or yellowed paper, nostalgic brown
-grading, heavy or uniform cartoon outlines, or any named visual style.
+`diary-default` is not a rigid house style or identity anchor. When neither the
+current entry nor the approved card supplies a more specific rendering
+treatment, use this flexible, portable bright-neutral diary baseline:
+
+- delicate, restrained linework;
+- transparent, low-chroma pale color accents;
+- clean cool-white or neutral-white paper;
+- bright neutral daylight;
+- pale blue-gray or neutral-gray shadows; and
+- localized natural material colors where the scene calls for them.
+
+Adapt the baseline to the scene hierarchy and medium, and keep it soft rather
+than treating it as a rendering lock. Do not silently apply a full-frame
+yellow-brown or nostalgic wash, thick uniform outlines, or any named visual
+style. The baseline changes only the effective entry style; it never revises
+the approved stored policy or weakens identity anchors. Report its source as the
+framework's style-guidance fallback, not as a user-selected stored policy.
 
 Control focus through value, color, detail, and spatial hierarchy rather than
 by removing the setting or applying a global muted filter.

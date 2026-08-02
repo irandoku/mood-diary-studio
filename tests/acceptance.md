@@ -24,8 +24,37 @@ Evaluate each case from a clean context with only the packaged Skill and case in
   language for `imagined` scenes; do not substitute one status for the other.
 - Do not invent documents, checklists, tools, or other proxy objects for
   unknown event content or completion evidence.
+- When the entry names a concrete topic (an event, place, season,
+  commemoration, cultural topic, or another explicitly named subject beyond a
+  generic mood), include at least one non-text theme carrier supported by the
+  entry, an authorized source, or explicitly marked editorial staging within
+  the `mood-to-scene.md` boundary; density may vary, but relevance cannot be
+  zero.
+- Pass both caption-removal and character-substitution tests; a date, phrase,
+  generic background, or mascot pose cannot be the sole topic evidence.
 - Report keep, merge, omit, and echo decisions when relevant.
 - Report counts that fit the stated visual-budget profile.
+- Report any requested density preference, selected profile, and selection
+  rationale; classify each theme carrier into a budget category and state any
+  role-sharing.
+- Apply approved silhouette, proportion, and limb geometry before selecting
+  furniture or support surfaces; check support contact, furniture scale, and
+  explainable occlusion. Compact or short mascots default to ground-level or
+  low seating unless the entry supplies a narrative reason.
+- Use the bright-neutral fallback (delicate restrained linework, transparent
+  low-chroma pale accents, cool/neutral white paper, bright neutral daylight,
+  pale blue-gray or neutral-gray shadows, and localized natural material
+  colors) only when no current-entry or approved stored treatment is more
+  specific; keep it separate from identity and avoid silent yellow-brown or
+  nostalgic wash and heavy uniform outlines.
+- Treat `layered` as a non-default profile with stated counts, using it only
+  when environmental, commemorative, cultural, or seasonal context carries the
+  narrative; retain one action, one complete scene, a detail-concentration
+  zone, and a quieter breathing zone rather than a poster or catalog.
+- Require user-provided or reliable authorized provenance for culturally
+  specific clothing, patterns, ceremonies, symbols, or factual labels; lower
+  specificity when unconfirmed and report source conflicts without silently
+  rewriting displayed labels.
 - Preserve identity-bearing anchor qualifiers in the final prompt without
   semantic weakening or contradiction.
 - Keep the prompt anchor set minimally sufficient; do not repeat the full
@@ -117,6 +146,19 @@ Fail a case if the agent:
 - calls a `desired` scene imagined, or an `imagined` scene desired;
 - adds a proxy document, checklist, tool, or other object to represent unknown
   event content, causes, or completion evidence;
+- leaves an explicit topic with no non-text theme carrier, or passes numeric
+  visual-budget counts while failing caption-removal or character-substitution;
+- omits a requested density preference, selected profile, or selection
+  rationale, or leaves a theme carrier uncounted or without a stated role;
+- selects furniture or support surfaces before applying approved character
+  silhouette, proportions, and limb geometry, or leaves compact mascots on
+  unmotivated tabletops/human-scale furniture with unexplained occlusion;
+- uses `layered` as a default, exceeds its counts, or turns it into a poster,
+  catalog, or background showcase without environmental, commemorative,
+  cultural, or seasonal narrative need;
+- invents culturally specific clothing, patterns, ceremonies, symbols, or
+  labels without user-provided or reliable authorized provenance, or silently
+  rewrites a displayed factual label that conflicts with a reliable source;
 - omits, reverses, or weakens an identity-bearing silhouette, proportion,
   orientation, location, or shape qualifier in the final prompt;
 - turns the final prompt into a repeated character-card or forbidden-drift

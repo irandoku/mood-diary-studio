@@ -2,7 +2,7 @@
 
 台灣繁體中文 | [English](README.md)
 
-Mood Diary Studio 是一個可攜式 Agent Skill，用來製作角色型心情手帳插圖。它不是單純擴寫生圖 Prompt，而是一套編輯決策框架：從日常敘述提煉情緒核心、刪除彼此競爭的事件、規劃低資訊密度構圖、套用已核准角色卡，最後產生模型中立的生圖 Prompt。
+Mood Diary Studio 是一個可攜式 Agent Skill，用來製作角色型心情手帳插圖。它不是單純擴寫生圖 Prompt，而是一套編輯決策框架：從日常敘述提煉情緒核心、保留具體主題所需的非文字線索、刪除彼此競爭的事件、規劃依敘事需要調整資訊密度的聚焦構圖、套用已核准角色卡，最後產生模型中立的生圖 Prompt。
 
 它也能建立與稽核純資料型角色擴充，而不把私人角色硬編進公開 framework。
 
@@ -55,8 +55,8 @@ skill/mood-diary-studio/
 可向支援標準 Skill 的 Agent 提出：
 
 ```text
-使用 mood-diary-studio 的 DIARY 模式，把這段日常敘述整理成克制、
-低資訊密度的角色型心情手帳 brief 與模型中立生圖 Prompt。
+使用 mood-diary-studio 的 DIARY 模式，把這段日常敘述整理成聚焦、依場景需要
+調整資訊密度的角色型心情手帳 brief 與模型中立生圖 Prompt。
 ```
 
 ## 角色擴充

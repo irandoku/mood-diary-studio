@@ -2,7 +2,7 @@
 
 [台灣繁體中文](README.zh-TW.md) | English
 
-Mood Diary Studio is a portable Agent Skill for making character-led mood diary illustrations. It acts as an editorial decision framework: it extracts an emotional center from a daily account, removes competing events, plans a low-density composition, applies an approved character card, and produces a model-neutral image prompt.
+Mood Diary Studio is a portable Agent Skill for making character-led mood diary illustrations. It acts as an editorial decision framework: it extracts an emotional center from a daily account, preserves non-text cues for any concrete topic, removes competing events, plans a focused composition whose density follows the narrative need, applies an approved character card, and produces a model-neutral image prompt.
 
 It also drafts and audits data-only character plugins without embedding private characters in the public framework.
 
@@ -56,7 +56,7 @@ Keep `SKILL.md`, `references/`, and `assets/` together. The repository root cont
 Then ask a compatible agent:
 
 ```text
-Use mood-diary-studio in DIARY mode. Turn this daily account into a restrained
+Use mood-diary-studio in DIARY mode. Turn this daily account into a focused
 character-led mood diary brief and a model-neutral image prompt.
 ```
 

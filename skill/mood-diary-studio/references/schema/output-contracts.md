@@ -36,9 +36,22 @@ Requirements:
   prompt without adding a new event, person, location, cause, or completion state;
 - show kept, merged, omitted, and echoed elements;
 - report budget counts that fit the named profile;
+- identify non-text theme carriers when the entry names a concrete topic;
+- classify each carrier into a budget category and state any role-sharing;
+- report any requested density preference, the selected profile, and the
+  selection rationale;
+- record the caption-removal and character-substitution checks, including any
+  revision made when a check failed;
 - report one unified scene, a detail-concentration zone, and the function of
   the breathing or negative-space zone;
+- apply approved silhouette, proportion, and limb geometry before selecting
+  furniture or support surfaces, and report relevant character-environment fit;
 - do not remove functional environment merely to claim a lower-density profile;
+- if using the non-default `layered` profile, report its rationale and counts
+  while retaining one action, one complete scene, a detail zone, and a breathing
+  zone;
+- report cultural specificity provenance and any factual-label conflict instead
+  of silently rewriting an unresolved source claim;
 - identify the character-card version or reference-only status;
 - preserve a minimum sufficient approved prompt anchor set without weakening
   or contradicting identity-bearing qualifiers, and without repeating the full
