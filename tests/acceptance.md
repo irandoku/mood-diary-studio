@@ -7,6 +7,9 @@ Evaluate each case from a clean context with only the packaged Skill and case in
 - The selected mode follows its output contract.
 - Facts, observations, inferences, and unknowns remain distinguishable.
 - Identity anchors and style guidance remain separate.
+- If the exact approved character card or authorized reference cannot be read,
+  stop and report the limitation; do not substitute conversation memory or a
+  different character.
 - Prompts contain no model or vendor syntax.
 - The framework does not claim to render images.
 - No character data is installed or updated without explicit approval.
@@ -63,6 +66,15 @@ Evaluate each case from a clean context with only the packaged Skill and case in
   only scene- or medium-relevant drift risks in the avoid language.
 - Report the approved stored style policy and override rule separately from
   the effective entry style and its source.
+- When the bright fine-line treatment is selected, assemble its paper, line,
+  pale-color, shadow, detail-hierarchy, and diary-grammar requirements into
+  the one final prompt without changing character authority.
+- Keep mascot scenes at a plausible low height and preserve full limb
+  visibility; do not use tabletop placement or human-scale furniture without
+  a sourced narrative reason.
+- Represent rain through localized cool atmosphere while retaining cool-white
+  paper; do not use a full-frame gray filter or dramatic sadness as a shortcut.
+- Use low-amplitude mascot expression rather than sticker reaction symbols.
 - Do not turn a DIARY-only style request into stored `user-selected` policy.
 - Give negative space a narrative function.
 - Do not invent a date or quotation.
@@ -166,6 +178,13 @@ Fail a case if the agent:
 - expands a simple mascot's anchor passage beyond one sentence without genuine
   character complexity;
 - reports a DIARY-only style request as stored `user-selected` policy;
+- uses the bright fine-line treatment as an identity anchor or card mutation;
+- replaces cool-white paper and localized pale-blue-gray atmosphere with
+  full-frame sepia, yellow, or gray grading;
+- turns fine-line diary treatment into thick black contours, muddy opaque
+  watercolor, glossy 3D, sticker, or commercial-poster rendering;
+- uses exaggerated reaction symbols or facial acting for a low-amplitude diary
+  emotion;
 - merges the stored style policy and effective entry style into one ambiguous
   field;
 - silently promotes a visible accessory into an immutable anchor;

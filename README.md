@@ -22,6 +22,11 @@ It coordinates:
 - date and short-text handling; and
 - identity and composition drift review.
 
+DIARY may also select the optional `bright-fine-line-gongbi-diary` treatment:
+cool-white paper, precise fine colored linework, transparent pale watercolor,
+localized light shadows, and restrained hand-diary composition. It is a visual
+treatment, not character identity or a stored character policy.
+
 ## Guardrails with creative room
 
 Mood Diary Studio standardizes governance outcomes, not every sentence or

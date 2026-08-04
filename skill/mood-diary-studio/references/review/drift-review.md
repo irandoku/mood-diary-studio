@@ -85,6 +85,16 @@ Run the relevant checks before delivering any mode.
       bright-neutral diary fallback is used as soft entry guidance rather than
       a fixed identity style; full-frame yellow-brown or nostalgic grading and
       heavy uniform outlines are not silently added.
+- [ ] When the bright fine-line treatment is selected, cool-white paper,
+      precise fine colored linework, transparent pale washes, localized
+      neutral or pale blue-gray shadows, and a narrative breathing zone remain
+      visible in the prompt.
+- [ ] The selected treatment does not introduce muddy opaque watercolor,
+      full-frame sepia/yellow/gray grading, thick black contours, sticker-like
+      reaction faces, glossy 3D rendering, or a commercial poster aesthetic.
+- [ ] Mascot emotion uses low-amplitude eyes, gaze, mouth, head angle, body
+      tension, or prop handling rather than reaction symbols or facial
+      exaggeration.
 - [ ] Style freedom does not weaken or override immutable identity anchors.
 - [ ] Output differences are not attributed to the card without controlled evidence.
 

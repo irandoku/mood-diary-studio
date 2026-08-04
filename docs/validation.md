@@ -55,6 +55,14 @@ Use mood-diary-studio at <skill-path> in DIARY mode for this entry: ...
 
 Do not tell the test agent the intended answer. Review whether the output follows the contract, distinguishes evidence from inference, and stops at approval gates.
 
+### Bright fine-line treatment checks
+
+The `tests/fixtures/bright-fine-line-gongbi-prompt.md` file is a semantic
+snapshot, not an exact-string oracle. Review the final prompt against its
+required visual-language and avoid markers while allowing equivalent natural
+wording. Check the dedicated style case and the updated mascot, cultural,
+text-policy, and anchor-fidelity cases for cross-rule behavior.
+
 ## Host claims
 
 Record hosts as unverified until the packaged Skill has been installed and run there. Passing a static validator demonstrates structure, not host behavior.
@@ -84,3 +92,10 @@ This milestone does not verify persistent Work runtime storage, direct Skill
 writes to Projects or Library, or deterministic image generation. The verified
 web lifecycle remains transient assembly, user-controlled download, and
 fresh-chat attachment import.
+
+## Revision note
+
+The next feature revision after `v0.4.0` is `v0.5.0`: it adds the optional,
+portable bright fine-line gongbi diary treatment and its DIARY prompt assembly
+and acceptance guidance. It does not change character schema, storage
+semantics, or ONBOARD/AUDIT approval gates.

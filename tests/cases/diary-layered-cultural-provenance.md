@@ -33,3 +33,6 @@ Expected:
 - report the conflicting factual label as unresolved, preserve it rather than
   silently rewriting or omitting it, and request approval before changing its
   representation.
+- If the bright fine-line treatment is selected, use precise local line detail
+  and thin pale color to separate supported cultural carriers while retaining
+  a quieter paper-white breathing zone; do not turn the page into a poster.

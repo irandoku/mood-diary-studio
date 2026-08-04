@@ -28,3 +28,9 @@ Expected:
 - do not compress the body into a wide horizontal rectangle, omit the rounded
   silhouette, or relocate the folded corner;
 - report visual-budget counts that fit the selected profile.
+- If the bright fine-line treatment is selected, keep its visual language in a
+  separate prompt block or natural sentence; it must not weaken the folded
+  corner, rounded silhouette, proportions, eyes, limbs, or satchel semantics.
+- If the exact approved card or reference cannot be read in a variant of this
+  case, stop and report the missing authority instead of using conversation
+  memory or substituting another character.

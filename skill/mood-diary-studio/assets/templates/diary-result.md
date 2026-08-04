@@ -60,6 +60,9 @@ text_elements:
 
 ## Model-neutral prompt
 
+<!-- Assemble one prompt from character authority, diary intent, visual language,
+scene construction, emotion direction, text policy, and relevant avoid rules. -->
+
 ## Avoid
 
 ## Drift review

@@ -102,6 +102,21 @@ cut-paper, watercolor, ink, or another treatment for the current entry.
 `user-selected` becomes a stored policy only after explicit long-term policy
 approval in ONBOARD or AUDIT.
 
+## Optional bright fine-line treatment
+
+`bright-fine-line-gongbi-diary` is a portable visual treatment reference, not a
+new character-card policy value. When the user requests it for one DIARY entry,
+report it under **Effective entry style** and keep the approved stored policy
+unchanged. When the user wants it as a long-term preference, use the existing
+explicit approval path for `user-selected`; do not add the treatment to an
+identity anchor or silently write it into a card.
+
+Read `references/visual-style/bright-fine-line-gongbi-diary.md` for the full
+treatment. Its fine line, cool-white paper, transparent pale color, localized
+shadow, density, and low-amplitude emotion rules are soft rendering guidance.
+They must yield to approved identity, provenance, scene evidence, date
+authorization, and the existing visual-budget limits.
+
 ## Causal boundary
 
 Do not attribute an output style to the character card without controlled

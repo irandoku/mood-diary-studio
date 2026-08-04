@@ -32,3 +32,5 @@ Expected:
 - select a visual-budget profile that contains every reported count; two
   independently described environmental cues cannot be labeled `minimal`;
 - do not ask for a date because it does not materially affect the illustration.
+- If the bright fine-line treatment is selected, do not add a date or phrase
+  merely because the treatment resembles a handwritten diary page.

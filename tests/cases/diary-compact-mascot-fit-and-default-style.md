@@ -26,3 +26,7 @@ Expected:
   stored-style compatibility values (`per-entry` and `allowed`);
 - keep the fallback portable and low-chroma without a full-frame yellow-brown
   wash or heavy uniform outlines, and do not turn it into an identity anchor.
+- If the bright fine-line treatment is selected instead, preserve the same
+  floor-level fit and replace only the effective rendering guidance: cool-white
+  paper, fine colored linework, transparent pale washes, and localized
+  pale-gray shadows.

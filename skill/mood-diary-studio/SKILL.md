@@ -52,6 +52,10 @@ For DIARY, always read:
 
 - `references/schema/storage-profiles.md`
 - `references/schema/style-guidance.md`
+- `references/visual-style/bright-fine-line-gongbi-diary.md` when this optional
+  treatment is requested or selected by the effective entry style
+- `references/prompt/mood-diary-prompt-template.md` when assembling the final
+  model-neutral prompt
 - `references/editorial/mood-to-scene.md`
 - `references/editorial/visual-budget.md`
 - `references/editorial/composition-and-negative-space.md`
