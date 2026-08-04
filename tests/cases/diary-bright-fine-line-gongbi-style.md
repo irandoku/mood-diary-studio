@@ -3,9 +3,8 @@
 Mode: DIARY
 
 Use the approved public-safe mascot character and its authorized reference.
-The user requests the `bright-fine-line-gongbi-diary` treatment for this entry
-only and asks for one model-neutral prompt. Do not modify the character card
-or generate an image.
+The user does not specify a rendering treatment and asks for one
+model-neutral prompt. Do not modify the character card or generate an image.
 
 Daily account:
 
@@ -14,8 +13,9 @@ Daily account:
 
 Expected:
 
-- preserve the approved identity and report the treatment as the effective
-  entry style, not as stored `user-selected` policy;
+- preserve the approved identity and report
+  `bright-fine-line-gongbi-diary` as the framework-default effective entry
+  style, not as stored `user-selected` policy;
 - include cool-white or near-white paper, generous narrative breathing room,
   very fine warm gray-brown or lightly colored linework, local gongbi-like
   detail, transparent pale watercolor, and extremely light neutral or

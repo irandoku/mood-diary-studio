@@ -60,9 +60,10 @@ Requirements:
   using v1 compatibility values when needed;
 - report the effective entry style and its source separately; a DIARY request
   must not silently revise the stored policy;
-- when the bright fine-line treatment is selected, the single final prompt must
-  represent character authority, diary intent, visual language, scene
-  construction, emotion direction, text policy, and relevant avoid rules;
+- when the bright fine-line treatment is the default or is selected explicitly,
+  the single final prompt must represent character authority, diary intent,
+  visual language, scene construction, emotion direction, text policy, and
+  relevant avoid rules;
 - report the storage profile, locator, availability state, and persistence state;
 - include one final prompt, not competing variants;
 - mark every drift check pass or revision.

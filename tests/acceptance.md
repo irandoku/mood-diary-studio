@@ -44,12 +44,12 @@ Evaluate each case from a clean context with only the packaged Skill and case in
   furniture or support surfaces; check support contact, furniture scale, and
   explainable occlusion. Compact or short mascots default to ground-level or
   low seating unless the entry supplies a narrative reason.
-- Use the bright-neutral fallback (delicate restrained linework, transparent
-  low-chroma pale accents, cool/neutral white paper, bright neutral daylight,
-  pale blue-gray or neutral-gray shadows, and localized natural material
-  colors) only when no current-entry or approved stored treatment is more
-  specific; keep it separate from identity and avoid silent yellow-brown or
-  nostalgic wash and heavy uniform outlines.
+- Use the framework-default `bright-fine-line-gongbi-diary` treatment when no
+  current-entry or approved stored treatment is more specific: delicate
+  restrained linework, transparent low-chroma pale accents, cool/neutral white
+  paper, pale blue-gray or neutral-gray shadows, localized natural material
+  colors, and local controlled detail. Keep it separate from identity and
+  avoid silent yellow-brown or nostalgic wash and heavy uniform outlines.
 - Treat `layered` as a non-default profile with stated counts, using it only
   when environmental, commemorative, cultural, or seasonal context carries the
   narrative; retain one action, one complete scene, a detail-concentration
@@ -66,9 +66,10 @@ Evaluate each case from a clean context with only the packaged Skill and case in
   only scene- or medium-relevant drift risks in the avoid language.
 - Report the approved stored style policy and override rule separately from
   the effective entry style and its source.
-- When the bright fine-line treatment is selected, assemble its paper, line,
-  pale-color, shadow, detail-hierarchy, and diary-grammar requirements into
-  the one final prompt without changing character authority.
+- When the bright fine-line treatment is the default or is selected explicitly,
+  assemble its paper, line, pale-color, shadow, detail-hierarchy, and
+  diary-grammar requirements into the one final prompt without changing
+  character authority.
 - Keep mascot scenes at a plausible low height and preserve full limb
   visibility; do not use tabletop placement or human-scale furniture without
   a sourced narrative reason.
@@ -178,6 +179,8 @@ Fail a case if the agent:
 - expands a simple mascot's anchor passage beyond one sentence without genuine
   character complexity;
 - reports a DIARY-only style request as stored `user-selected` policy;
+- silently falls back to a different generic rendering treatment when no more
+  specific style was requested or approved;
 - uses the bright fine-line treatment as an identity anchor or card mutation;
 - replaces cool-white paper and localized pale-blue-gray atmosphere with
   full-frame sepia, yellow, or gray grading;

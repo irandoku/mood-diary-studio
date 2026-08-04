@@ -179,11 +179,14 @@ Use `references/schema/style-guidance.md`.
 Keep style guidance soft and portable. Never weaken identity anchors to satisfy
 medium, texture, line, or palette guidance.
 
-When the effective entry style is the optional `bright-fine-line-gongbi-diary`
-treatment, also read `references/visual-style/bright-fine-line-gongbi-diary.md`.
-Apply its paper, line, color, density, scene-scale, emotion, weather, and
-failure rules as visual guidance only. Do not copy any character identity from
-its examples or allow it to replace the approved card.
+When no current-entry request or approved stored treatment is more specific,
+use `bright-fine-line-gongbi-diary` as the effective entry style, sourced from
+the framework default. Also read
+`references/visual-style/bright-fine-line-gongbi-diary.md` whenever it is the
+default or selected treatment. Apply its paper, line, color, density,
+scene-scale, emotion, weather, and failure rules as visual guidance only. Do
+not copy any character identity from its examples or allow it to replace the
+approved card.
 
 ### 9. Write the prompt
 

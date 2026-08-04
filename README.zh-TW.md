@@ -22,9 +22,10 @@ Mood Diary Studio 是一個可攜式 Agent Skill，用來製作角色型心情�
 - 日期與短句處理；
 - 身份與構圖 drift review。
 
-DIARY 也可選用 `bright-fine-line-gongbi-diary` 明透細線工筆淡彩手帳風：
-冷白紙面、精準帶色細線、透明淡彩、局部淡陰影與克制的手帳構圖。這是
-視覺處理，不是角色身份，也不是儲存進角色卡的 policy。
+DIARY 預設採用 `bright-fine-line-gongbi-diary` 明透細線工筆淡彩手帳風：
+冷白紙面、精準帶色細線、透明淡彩、局部淡陰影與克制的手帳構圖。更
+具體且經核准的 style 或當次 DIARY style request 可以覆寫它。這是視覺
+處理，不是角色身份，也不是儲存進角色卡的 policy。
 
 ## 用邊界保留創意空間
 

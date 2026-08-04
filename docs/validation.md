@@ -95,7 +95,7 @@ fresh-chat attachment import.
 
 ## Revision note
 
-The next feature revision after `v0.4.0` is `v0.5.0`: it adds the optional,
-portable bright fine-line gongbi diary treatment and its DIARY prompt assembly
-and acceptance guidance. It does not change character schema, storage
-semantics, or ONBOARD/AUDIT approval gates.
+The next feature revision after `v0.4.0` is `v0.5.0`: it makes the portable
+bright fine-line gongbi diary treatment the DIARY default and retains explicit
+override guidance. It does not change character schema, storage semantics, or
+ONBOARD/AUDIT approval gates.

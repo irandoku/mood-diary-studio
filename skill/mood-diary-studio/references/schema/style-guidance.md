@@ -23,7 +23,8 @@ Allowed policies:
 - `reference-guided` — softly follow user-approved, non-identity rendering
   qualities observed across coherent references;
 - `diary-default` — use the current diary brief's focused editorial grammar
-  without imposing a fixed rendering aesthetic;
+  with the framework's default bright fine-line treatment unless a more
+  specific approved or current-entry treatment applies;
 - `user-selected` — use generic style guidance explicitly supplied or approved
   by the user;
 - `per-entry` — store no long-term default and decide in each DIARY task.
@@ -61,23 +62,21 @@ line, shape language, palette behavior, texture, and visual density.
   current-entry request, approved stored guidance, then the fallback baseline
   below when neither supplies a more specific treatment.
 
-`diary-default` is not a rigid house style or identity anchor. When neither the
-current entry nor the approved card supplies a more specific rendering
-treatment, use this flexible, portable bright-neutral diary baseline:
+`diary-default` is soft rendering guidance, not an identity anchor or an
+unbreakable rendering lock. When neither the current entry nor the approved
+card supplies a more specific treatment, use
+`bright-fine-line-gongbi-diary` from
+`references/visual-style/bright-fine-line-gongbi-diary.md` as the framework's
+default effective entry style. It includes delicate restrained linework,
+transparent low-chroma pale color, cool-white or neutral-white paper,
+localized pale blue-gray or neutral-gray shadows, and localized natural
+material colors where the scene calls for them.
 
-- delicate, restrained linework;
-- transparent, low-chroma pale color accents;
-- clean cool-white or neutral-white paper;
-- bright neutral daylight;
-- pale blue-gray or neutral-gray shadows; and
-- localized natural material colors where the scene calls for them.
-
-Adapt the baseline to the scene hierarchy and medium, and keep it soft rather
-than treating it as a rendering lock. Do not silently apply a full-frame
-yellow-brown or nostalgic wash, thick uniform outlines, or any named visual
-style. The baseline changes only the effective entry style; it never revises
-the approved stored policy or weakens identity anchors. Report its source as the
-framework's style-guidance fallback, not as a user-selected stored policy.
+Adapt the treatment to the scene hierarchy and medium. Do not silently apply a
+full-frame yellow-brown or nostalgic wash, thick uniform outlines, or identity
+changes. The default changes only the effective entry style; it never revises
+the approved stored policy or weakens identity anchors. Report its source as
+the framework default, not as a user-selected stored policy.
 
 Control focus through value, color, detail, and spatial hierarchy rather than
 by removing the setting or applying a global muted filter.
@@ -102,14 +101,15 @@ cut-paper, watercolor, ink, or another treatment for the current entry.
 `user-selected` becomes a stored policy only after explicit long-term policy
 approval in ONBOARD or AUDIT.
 
-## Optional bright fine-line treatment
+## Default bright fine-line treatment
 
-`bright-fine-line-gongbi-diary` is a portable visual treatment reference, not a
-new character-card policy value. When the user requests it for one DIARY entry,
-report it under **Effective entry style** and keep the approved stored policy
-unchanged. When the user wants it as a long-term preference, use the existing
-explicit approval path for `user-selected`; do not add the treatment to an
-identity anchor or silently write it into a card.
+`bright-fine-line-gongbi-diary` is the framework's default portable visual
+treatment, not a new character-card policy value. When it is used by default or
+requested for one DIARY entry, report it under **Effective entry style** and
+keep the approved stored policy unchanged. When the user wants it as a
+long-term preference, use the existing explicit approval path for
+`user-selected`; do not add the treatment to an identity anchor or silently
+write it into a card.
 
 Read `references/visual-style/bright-fine-line-gongbi-diary.md` for the full
 treatment. Its fine line, cool-white paper, transparent pale color, localized

@@ -34,8 +34,8 @@ unknown event content or completion evidence.
 
 ## Visual language
 
-When this treatment is selected, express the semantic requirements rather than
-copying a long style inventory:
+When this treatment is the framework default or is selected explicitly, express
+the semantic requirements rather than copying a long style inventory:
 
 - cool-white or near-white paper with generous narrative breathing space;
 - very fine warm gray-brown or lightly colored precise linework;

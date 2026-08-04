@@ -82,10 +82,11 @@ Run the relevant checks before delivering any mode.
 - [ ] Per-entry style does not silently revise the character card.
 - [ ] Style remains soft, portable, and subordinate to identity.
 - [ ] When no current-entry or approved stored treatment is more specific, the
-      bright-neutral diary fallback is used as soft entry guidance rather than
-      a fixed identity style; full-frame yellow-brown or nostalgic grading and
-      heavy uniform outlines are not silently added.
-- [ ] When the bright fine-line treatment is selected, cool-white paper,
+      bright fine-line treatment is used as the framework-default effective
+      entry style; full-frame yellow-brown or nostalgic grading and heavy
+      uniform outlines are not silently added.
+- [ ] When the bright fine-line treatment is the default or is selected,
+      cool-white paper,
       precise fine colored linework, transparent pale washes, localized
       neutral or pale blue-gray shadows, and a narrative breathing zone remain
       visible in the prompt.

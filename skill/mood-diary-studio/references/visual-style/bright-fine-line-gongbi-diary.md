@@ -1,6 +1,7 @@
 # Bright Fine-Line Gongbi Diary
 
-Use this as an optional, portable rendering treatment for DIARY results:
+Use this as the default, portable rendering treatment for DIARY results unless
+a more specific approved or current-entry treatment overrides it:
 
 > 明透細線工筆淡彩手帳風 — bright, airy, fine-line, gongbi-like,
 > transparent light-watercolor mood diary.

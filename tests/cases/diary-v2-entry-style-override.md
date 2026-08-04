@@ -35,5 +35,6 @@ Expected:
   the current request;
 - do not report stored policy `user-selected`;
 - do not modify or propose modifying the card.
-- The same rule applies to the optional bright fine-line treatment: report it
-  as the effective entry style only, never as stored `user-selected` policy.
+- The same rule applies when the bright fine-line treatment is used by default:
+  report it as the framework-default effective entry style, never as stored
+  `user-selected` policy.

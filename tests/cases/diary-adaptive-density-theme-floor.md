@@ -32,3 +32,6 @@ Expected:
   replaced by a neutral figure;
 - keep the hand-drawn diary breathing space while avoiding a blank generic
   background and avoiding an invented prop list.
+- Because the entry does not request a more specific rendering treatment, use
+  `bright-fine-line-gongbi-diary` as the framework-default effective entry
+  style without changing the approved character card.

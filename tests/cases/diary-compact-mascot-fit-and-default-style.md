@@ -1,4 +1,4 @@
-# DIARY Case: Compact mascot scene fit and bright-neutral fallback
+# DIARY Case: Compact mascot scene fit and default style
 
 Mode: DIARY
 
@@ -22,11 +22,10 @@ Expected:
   proportionate furniture, and explainable occlusion; do not place the compact
   mascot on a tabletop or human-scale furniture without a narrative reason;
 - because no current-entry or approved stored treatment is more specific, use
-  the soft bright-neutral diary fallback and report it separately from the v1
-  stored-style compatibility values (`per-entry` and `allowed`);
-- keep the fallback portable and low-chroma without a full-frame yellow-brown
-  wash or heavy uniform outlines, and do not turn it into an identity anchor.
-- If the bright fine-line treatment is selected instead, preserve the same
-  floor-level fit and replace only the effective rendering guidance: cool-white
-  paper, fine colored linework, transparent pale washes, and localized
-  pale-gray shadows.
+  `bright-fine-line-gongbi-diary` as the framework-default effective entry
+  style and report it separately from the v1 stored-style compatibility values
+  (`per-entry` and `allowed`);
+- keep the default portable and low-chroma without a full-frame yellow-brown
+  wash or heavy uniform outlines, and do not turn it into an identity anchor;
+- preserve the same floor-level fit while using cool-white paper, fine colored
+  linework, transparent pale washes, and localized pale-gray shadows.
